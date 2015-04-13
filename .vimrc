@@ -21,8 +21,8 @@ Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
-Plugin 'Valloric/YouCompleteMe'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
@@ -77,6 +77,9 @@ set spell
 set wildmode=longest,list,full
 set wildmenu
 set directory=~/.vim/swap,.
+set nobackup       #no backup files
+set nowritebackup  #only in case you don't want a backup file while editing
+set noswapfile     #no swap files
 
 "colorscheme torte
 colorscheme monokai
@@ -114,6 +117,15 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 set laststatus=2
 
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UtilSnips", "vim-snippets/UltiSnips"]
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
+
 " vim-multiple-cursors settings
 let g:multi_cursor_exit_from_visual_mode = 0
 
@@ -125,15 +137,16 @@ vmap <C-c> ::TComment<CR>
 nmap <C-a> :EasyAlign
 vmap <C-a> :EasyAlign
 
-" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<c-k>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
-let g:UltiSnipsSnippetDirectories=["UtilSnips", "vim-snippets/UltiSnips"]
-
-" If you want :UltiSnipsEdit to split your window.
-let g:UltiSnipsEditSplit="vertical"
-
 " open window after fugitive Ggrep
+nmap <Leader>c :Git checkout %<CR>
+nmap <d-F> :Ggrep ""<Left>
 autocmd QuickFixCmdPost *grep* tabnew %
 autocmd QuickFixCmdPost *grep* cwindow
+
+" set auto syntax highlighting
+au BufNewFile,BufRead *.erb set filetype=html
+au BufNewFile,BufRead *.ejs set filetype=html
+
+" save file to clipboard
+nmap <Leader>f :let @* = expand("%")<CR>
+
