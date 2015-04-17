@@ -10,6 +10,7 @@ call vundle#begin()
 " let Vundle manage Vundle, required
 Plugin 'gmarik/Vundle.vim'
 Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-unimpaired'
 Plugin 'Ack.vim'
@@ -149,4 +150,9 @@ au BufNewFile,BufRead *.ejs set filetype=html
 
 " save file to clipboard
 nmap <Leader>f :let @* = expand("%")<CR>
+
+" close tab
+nmap <Leader>w :tabclose<CR>
+nmap <d-w> :tabclose<CR>
+nmap <Leader>p :tabnew<CR>:MRU<CR>
 
