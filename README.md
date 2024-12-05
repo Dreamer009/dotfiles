@@ -34,6 +34,7 @@
 ## Vim Plugins
 * [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
 * [tpope/vim-surround](http://github.com/tpope/vim-surround)
+* [tpope/vim-repeat](http://github.com/tpope/vim-repeat)
 * [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [tpope/vim-unimpaired](http://github.com/tpope/vim-unimpaired)
 * [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
