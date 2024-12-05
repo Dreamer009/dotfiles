@@ -46,7 +46,7 @@
 * [terryma/vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
 * [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
 * [Valloric/YouCompleteMe](http://github.com/Valloric/YouCompleteMe)
-* [junegunn/vim-easy-align'](http://github.com/junegunn/vim-easy-align')
+* [junegunn/vim-easy-align'](http://github.com/junegunn/vim-easy-align)
 
 ## Fugitive Screencasts
 * [A complement to command line git](http://vimcasts.org/e/31)
