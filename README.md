@@ -1,6 +1,7 @@
 ## Quick Start
 
 1. Download a Vim IDE (optional)
+
    Recommendations:
 
    a. [Vimr](http://vimr.org/)
