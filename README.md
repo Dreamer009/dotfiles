@@ -3,7 +3,7 @@
 1. Set up Vundle:
 
    `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-2. Copy .vimrc and .jshint files to ~/
+2. Copy .vimrc and .jshintrc files to ~/
 3. Copy /colors dir to ~/.vim
 4. Install jshint for syntastic to work on .js files
 
