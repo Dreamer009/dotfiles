@@ -1,15 +1,25 @@
 ## Quick Start
 
-1. Set up Vundle:
+1. Download a Vim IDE (optional)
+   Recommendations:
+
+   a. [Vimr](http://vimr.org/)
+
+   b. [MacVim](https://code.google.com/p/macvim/)
+
+      Note: MacVim doesn't come with a file browser, so might want to add [NERDTree](https://github.com/scrooloose/nerdtree)
+
+      install via: `brew install macvim`
+2. Set up Vundle:
 
    `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
-2. Copy .vimrc and .jshintrc files to ~/
+3. Copy .vimrc and .jshintrc files to ~/
 
-3. Copy /colors dir to ~/.vim
-4. Install jshint for syntastic to work on .js files
+4. Copy /colors dir to ~/.vim
+5. Install jshint for syntastic to work on .js files
 
    `sudo npm install -g jshint`
-5. Install Plugins:
+6. Install Plugins:
 
    Launch vim and run `:PluginInstall`
 
