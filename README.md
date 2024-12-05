@@ -8,9 +8,9 @@
 
    b. [MacVim](https://code.google.com/p/macvim/)
 
-      Note: MacVim doesn't come with a file browser, so might want to add [NERDTree](https://github.com/scrooloose/nerdtree)
-
       install via: `brew install macvim`
+
+      Note: MacVim doesn't come with a file browser, so might want to add [NERDTree](https://github.com/scrooloose/nerdtree)
 2. Set up Vundle:
 
    `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
