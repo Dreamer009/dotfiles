@@ -30,6 +30,9 @@
    `cd ~/.vim/bundel/YouCompleteMe && ./install.sh`
 
    You may need to install cmake `brew install cmake`
+8. Make directory to store all your swap files
+
+   `mkdir ~/.vim/swap`
 
 ## Vim Plugins
 * [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
@@ -47,6 +50,8 @@
 * [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
 * [Valloric/YouCompleteMe](http://github.com/Valloric/YouCompleteMe)
 * [junegunn/vim-easy-align'](http://github.com/junegunn/vim-easy-align)
+* [SirVer/ultisnips](http://github.com/SirVer/ultisnips)
+* [honza/vim-snippets](http://github.com/honza/vim-snippets)
 
 ## Fugitive Screencasts
 * [A complement to command line git](http://vimcasts.org/e/31)
