@@ -133,3 +133,7 @@ let g:UltiSnipsSnippetDirectories=["UtilSnips", "vim-snippets/UltiSnips"]
 
 " If you want :UltiSnipsEdit to split your window.
 let g:UltiSnipsEditSplit="vertical"
+
+" open window after fugitive Ggrep
+autocmd QuickFixCmdPost *grep* tabnew %
+autocmd QuickFixCmdPost *grep* cwindow
