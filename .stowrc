@@ -4,4 +4,5 @@
 --ignore=atuin/*
 --ignore=colors/*
 --ignore=nushell/*
+--ignore=.git/*
 --ignore=Makefile
