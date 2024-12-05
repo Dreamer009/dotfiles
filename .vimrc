@@ -23,6 +23,8 @@ Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'junegunn/vim-easy-align'
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -72,6 +74,9 @@ set incsearch
 set list
 set listchars=
 set spell
+set wildmode=longest,list,full
+set wildmenu
+set directory=~/.vim/swap,.
 
 "colorscheme torte
 colorscheme monokai
@@ -119,3 +124,12 @@ vmap <C-c> ::TComment<CR>
 " vim-easy-align settings
 nmap <C-a> :EasyAlign
 vmap <C-a> :EasyAlign
+
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsExpandTrigger="<c-k>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsSnippetDirectories=["UtilSnips", "vim-snippets/UltiSnips"]
+
+" If you want :UltiSnipsEdit to split your window.
+let g:UltiSnipsEditSplit="vertical"
