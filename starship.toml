@@ -125,19 +125,19 @@ detect_files = ['Dockerfile']
 format = '[$symbol$context( \($namespace\))]($style) '
 
 [buf]
-symbol = "  "
+symbol = " "
 
 [c]
-symbol = "  "
+symbol = " "
 
 [conda]
-symbol = "  "
+symbol = " "
 
 [crystal]
 symbol = " "
 
 [dart]
-symbol = "  "
+symbol = " "
 
 [directory]
 read_only = " 󰌾"
@@ -146,10 +146,10 @@ read_only = " 󰌾"
 symbol = " "
 
 [elixir]
-symbol = "  "
+symbol = " "
 
 [elm]
-symbol = "  "
+symbol = " "
 
 [fennel]
 symbol = " "
@@ -164,7 +164,7 @@ tag_symbol = '  '
 symbol = " "
 
 [haskell]
-symbol = "  "
+symbol = " "
 
 [haxe]
 symbol = " "
@@ -176,34 +176,34 @@ symbol = " "
 ssh_symbol = " "
 
 [java]
-symbol = "  "
+symbol = " "
 
 [julia]
-symbol = "  "
+symbol = " "
 
 [kotlin]
-symbol = "  "
+symbol = " "
 
 [lua]
-symbol = "  "
+symbol = " "
 
 [memory_usage]
 symbol = "󰍛 "
 
 [meson]
-symbol = "󰔷  "
+symbol = "󰔷 "
 
 [nim]
-symbol = "󰆥  "
+symbol = "󰆥 "
 
 [nix_shell]
-symbol = "  "
+symbol = " "
 
 [nodejs]
-symbol = "  "
+symbol = " "
 
 [ocaml]
-symbol = "  "
+symbol = " "
 
 [os.symbols]
 Alpaquita = " "
@@ -254,37 +254,37 @@ Windows = "󰍲 "
 symbol = "󰏗 "
 
 [perl]
-symbol = "  "
+symbol = " "
 
 [php]
-symbol = "  "
+symbol = " "
 
 [pijul_channel]
-symbol = "  "
+symbol = " "
 
 [python]
-symbol = "  "
+symbol = " "
 
 [rlang]
-symbol = "󰟔  "
+symbol = "󰟔 "
 
 [ruby]
-symbol = "  "
+symbol = " "
 
 [rust]
-symbol = "󱘗  "
+symbol = "󱘗 "
 
 [scala]
-symbol = "  "
+symbol = " "
 
 [swift]
-symbol = "  "
+symbol = " "
 
 [zig]
-symbol = "  "
+symbol = " "
 
 [gradle]
-symbol = "  "
+symbol = " "
 
 [palettes.catppuccin_mocha]
 rosewater = "#f5e0dc"
