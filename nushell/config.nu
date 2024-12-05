@@ -942,7 +942,7 @@ alias vi = nvim
 # ---- Fzf (fuzzy find) -----
 alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
 
-source ~/.config/nushell/env.nu
+source ./env.nu
 source ~/.cache/carapace/init.nu
 source /opt/homebrew/opt/asdf/libexec/asdf.nu
 use ~/.cache/starship/init.nu
