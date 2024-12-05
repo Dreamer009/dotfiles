@@ -6,3 +6,4 @@
 --ignore=nushell/*
 --ignore=.git/*
 --ignore=Makefile
+--ignore=nvim/lazy-lock.json
