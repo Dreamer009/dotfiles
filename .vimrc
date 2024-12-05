@@ -19,8 +19,10 @@ Plugin 'vim-scripts/mru.vim'
 Plugin 'bling/vim-airline'
 Plugin 'xolox/vim-misc'
 Plugin 'xolox/vim-session'
-Plugin 'terryma/vim-multiple-cursors'
 Plugin 'scrooloose/syntastic'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'junegunn/vim-easy-align'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -69,6 +71,7 @@ set autoread
 set incsearch
 set list
 set listchars=
+set spell
 
 "colorscheme torte
 colorscheme monokai
@@ -95,13 +98,24 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " nnoremap <C-R> :%s///g<Left><LEFT><Left>
-"
+
+" syntastic settings
 set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
-
 let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 set laststatus=2
+
+" vim-multiple-cursors settings
+let g:multi_cursor_exit_from_visual_mode = 0
+
+" tcomment_vim settings
+nmap <C-c> ::TComment<CR>
+vmap <C-c> ::TComment<CR>
+
+" vim-easy-align settings
+nmap <C-a> :EasyAlign
+vmap <C-a> :EasyAlign

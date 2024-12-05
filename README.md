@@ -25,13 +25,18 @@
    Launch vim and run `:PluginInstall`
 
    To install from command line: `vim +PluginInstall +qall`
+7. Enable YouCompleteMe tab completion
+
+   `cd ~/.vim/bundel/YouCompleteMe && ./install.sh`
+
+   You may need to install cmake `brew install cmake`
 
 ## Vim Plugins
 * [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
 * [tpope/vim-surround](http://github.com/tpope/vim-surround)
 * [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
 * [tpope/vim-unimpaired](http://github.com/tpope/vim-unimpaired)
-* [Ack.vim](https://github.com/mileszs/ack.vim)
+* [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
 * [wincent/command-t](http://github.com/wincent/command-t)
 * [tomtom/tcomment_vim](http://github.com/tomtom/tcomment_vim)
 * [vim-scripts/mru.vim](http://github.com/vim-scripts/mru.vim)
@@ -40,6 +45,8 @@
 * [xolox/vim-session](http://github.com/xolox/vim-session)
 * [terryma/vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
 * [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
+* [Valloric/YouCompleteMe](http://github.com/Valloric/YouCompleteMe)
+* [junegunn/vim-easy-align'](http://github.com/junegunn/vim-easy-align')
 
 ## Fugitive Screencasts
 * [A complement to command line git](http://vimcasts.org/e/31)
