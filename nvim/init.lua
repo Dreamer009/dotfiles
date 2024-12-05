@@ -1,5 +1,5 @@
-require("ben.core")
-require("ben.lazy")
+require("core")
+require("lazy-init")
 
 -- local function open_nvim_tree(data)
 -- 	-- Ensure nvim-tree doesn't open if a directory is passed
