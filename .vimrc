@@ -156,3 +156,7 @@ nmap <Leader>w :tabclose<CR>
 nmap <d-w> :tabclose<CR>
 nmap <Leader>p :tabnew<CR>:MRU<CR>
 
+" xolox/vim-session settings
+let g:session_lock_enabled      = 0 " Disable all session locking - I know what I'm doing :-).
+let g:session_default_to_last   = 1 " set the default to the last used
+let g:session_autosave_periodic = 1 " save every minute
