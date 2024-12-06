@@ -8,7 +8,7 @@ return {
 		-- configure lualine with modified theme
 		lualine.setup({
 			options = {
-				theme = "onedark",
+				theme = "tokyonight",
 			},
 			sections = {
 				lualine_x = {
