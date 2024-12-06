@@ -6,6 +6,12 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
+-- copy and paste
+keymap.set("n", "<D-c>", '"+p', { noremap = true, silent = true })
+keymap.set("i", "<D-c>", '<C-o>"+p', { noremap = true, silent = true })
+keymap.set("n", "<D-v>", '"+p', { noremap = true, silent = true })
+keymap.set("i", "<D-v>", '<C-o>"+p', { noremap = true, silent = true })
+
 -- clear search highlights
 keymap.set("n", "<leader>nh", ":nohl<CR>", { desc = "Clear search highlights" })
 
