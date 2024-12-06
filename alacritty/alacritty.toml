@@ -17,17 +17,48 @@ size = 14
 [scrolling]
 history = 10000
 
-# Based off the onedark color paletter
-# https://github.com/navarasu/onedark.nvim/blob/master/lua/onedark/palette.lua
-[colors.primary]
-background = '#1e2127'
-foreground = '#abb2bf'
+# -----------------------------------------------------------------------------
+# TokyoNight Alacritty Colors
+# Theme: Tokyo Night Moon
+# Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_moon.toml
+# -----------------------------------------------------------------------------
 
+# Default colors
+[colors.primary]
+background = '#222436'
+foreground = '#c8d3f5'
+
+[colors.cursor]
+cursor = '#c8d3f5'
+text = '#222436'
+
+# Normal colors
 [colors.normal]
-black = '#1e2127'
-blue = '#61afef'
-cyan = '#56b6c2'
-green = '#98c379'
-magenta = '#c678dd'
-red = '#e86671'
-yellow = '#e5c07b'
+black = '#1b1d2b'
+red = '#ff757f'
+green = '#c3e88d'
+yellow = '#ffc777'
+blue = '#82aaff'
+magenta = '#c099ff'
+cyan = '#86e1fc'
+white = '#828bb8'
+
+# Bright colors
+[colors.bright]
+black = '#444a73'
+red = '#ff8d94'
+green = '#c7fb6d'
+yellow = '#ffd8ab'
+blue = '#9ab8ff'
+magenta = '#caabff'
+cyan = '#b2ebff'
+white = '#c8d3f5'
+
+# Indexed Colors
+[[colors.indexed_colors]]
+index = 16
+color = '#ff966c'
+
+[[colors.indexed_colors]]
+index = 17
+color = '#c53b53'

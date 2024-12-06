@@ -135,7 +135,7 @@ alias v="vim"
 alias vi="nvim"
 
 # ----- Bat (better cat) -----
-export BAT_THEME=OneDark
+export BAT_THEME=TokyonightStorm
 alias cat="bat"
 
 # ---- Eza (better ls) -----

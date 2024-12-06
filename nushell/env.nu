@@ -116,7 +116,7 @@ $env.FZF_CTRL_T_COMMAND = '$FZF_DEFAULT_COMMAND'
 $env.FZF_ALT_C_COMMAND = 'fd --type=d --hidden --strip-cwd-prefix --exclude .git'
 
 # ----- Bat (better cat) -----
-$env.BAT_THEME = 'OneDark'
+$env.BAT_THEME = 'TokyonightStorm'
 
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 $env.STARSHIP_CONFIG = '/Users/benjaminsullivan/.config/starship.toml'
