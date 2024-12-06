@@ -921,8 +921,14 @@ $env.config = {
             mode: [emacs, vi_normal, vi_insert]
             event: {
                 send: executehostcommand
-        #         cmd: "commandline edit --replace (fzf --multi --preview='bat --style=numbers --color=always {}' )"
-                cmd: "commandline edit --replace (fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}' )"
+                # NOTE: the following work with nushell as the default terminal
+                # fzf previews without folder tree format
+                # cmd: "commandline edit --replace (fzf --multi --preview='bat --style=numbers --color=always {}' )"
+                # fzf previews with folder tree format
+                # cmd: "commandline edit --replace (fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}' )"
+
+                # NOTE: works with zsh as the default terminal
+                cmd: "commandline edit --replace (fzf --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi' )"
             }
         }
     ]
@@ -940,7 +946,10 @@ alias v = vi
 alias vi = nvim
 
 # ---- Fzf (fuzzy find) -----
-alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
+# NOTE: works with nushell as the default terminal
+# alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
+# NOTE: works with zsh as the default terminal
+alias fzf = fzf --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
 source ./env.nu
 source ~/.cache/carapace/init.nu
