@@ -17,6 +17,9 @@ size = 14
 [scrolling]
 history = 10000
 
+[terminal.shell]
+program = "/opt/homebrew/bin/nu"
+
 # -----------------------------------------------------------------------------
 # TokyoNight Alacritty Colors
 # Theme: Tokyo Night Moon
