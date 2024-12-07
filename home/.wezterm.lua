@@ -10,8 +10,21 @@ local config = wezterm.config_builder()
 config.default_prog = { "/opt/homebrew/bin/nu" }
 
 -- Font
-config.font = wezterm.font("MesloLGL Nerd Font Mono")
 config.font_size = 14
+config.font = wezterm.font({
+	family = "RecMonoCasual Nerd Font Mono",
+	weight = "Bold",
+})
+config.font_rules = {
+	{
+		italic = true,
+		font = wezterm.font({
+			family = "Maple Mono",
+			italic = true,
+			weight = "Bold",
+		}), -- Custom font for italic text
+	},
+}
 
 config.window_padding = {
 	left = 0,
