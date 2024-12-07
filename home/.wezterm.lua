@@ -6,6 +6,8 @@ local config = wezterm.config_builder()
 
 -- This is where you actually apply your config choices
 
+config.term = "xterm-256color"
+
 -- Default shell
 config.default_prog = { "/opt/homebrew/bin/nu" }
 
