@@ -1,6 +1,11 @@
 require("core")
 require("lazy-init")
 
+if vim.g.neovide then
+	vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
+	vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
+end
+
 -- local function open_nvim_tree(data)
 -- 	-- Ensure nvim-tree doesn't open if a directory is passed
 -- 	if vim.fn.isdirectory(data.file) == 1 then
