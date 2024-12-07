@@ -44,7 +44,7 @@ config.window_decorations = "RESIZE"
 -- tokyonight_moon
 config.colors = {
 	foreground = "#c8d3f5",
-	background = "#222436",
+	background = "#24283b",
 	cursor_bg = "#c8d3f5",
 	cursor_border = "#c8d3f5",
 	cursor_fg = "#222436",
