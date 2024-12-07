@@ -12,7 +12,7 @@ config.term = "xterm-256color"
 config.default_prog = { "/opt/homebrew/bin/nu" }
 
 -- Font
-config.font_size = 14
+config.font_size = 13
 config.font = wezterm.font({
 	family = "RecMonoCasual Nerd Font Mono",
 	weight = "Bold",
