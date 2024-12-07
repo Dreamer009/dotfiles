@@ -939,7 +939,7 @@ alias cat = bat
 
 # ---- Eza (better ls) -----
 alias nuls = ls
-alias ls = eza --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions
+alias ls = eza -a --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions --ignore-glob=".DS_Store"
 
 # ---- Nvim (and old vi habbits) -----
 alias v = vi
