@@ -1,9 +1,10 @@
 --target=~/.config
 --ignore=.stowrc
 --ignore=DS_Store
+--ignore=.git/*
 --ignore=atuin/*
 --ignore=colors/*
+--ignore=home/*
 --ignore=nushell/*
---ignore=.git/*
 --ignore=Makefile
 --ignore=nvim/lazy-lock.json
