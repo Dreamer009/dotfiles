@@ -44,3 +44,6 @@ opt.splitbelow = true -- split horizontal window to the bottom
 
 -- turn off swapfile
 opt.swapfile = false
+
+-- nushell
+opt.shell = "/opt/homebrew/bin/nu"
