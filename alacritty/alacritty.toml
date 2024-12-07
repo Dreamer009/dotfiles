@@ -28,7 +28,7 @@ program = "/opt/homebrew/bin/nu"
 
 # Default colors
 [colors.primary]
-background = '#222436'
+background = '#24283b'
 foreground = '#c8d3f5'
 
 [colors.cursor]

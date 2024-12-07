@@ -346,8 +346,8 @@
     line-numbers-left-style = red
     line-numbers-right-format = " {np:>3} │"
     line-numbers-right-style = green
-    line-numbers-minus-style = red italic "#222436" # needs to match terminal 'colors.primary.background'
-    line-numbers-plus-style = green italic "#222436" # needs to match terminal 'colors.primary.background'
+    line-numbers-minus-style = red italic "#24283b" # needs to match terminal 'colors.primary.background'
+    line-numbers-plus-style = green italic "#24283b" # needs to match terminal 'colors.primary.background'
     line-numbers-zero-style = "#434C5E" italic
     minus-style = bold red
     # minus-emph-style = bold red 52
