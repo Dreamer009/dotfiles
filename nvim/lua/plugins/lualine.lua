@@ -4,6 +4,7 @@ return {
 	config = function()
 		local lualine = require("lualine")
 		local lazy_status = require("lazy.status") -- to configure lazy pending updates count
+		local noice = require("noice")
 
 		-- -----------------------------------------------------------------------------
 		-- Theme: Tokyo Night Storm
@@ -85,6 +86,16 @@ return {
 					},
 					"diagnostics",
 				},
+				lualine_c = {
+					{
+						require("noice").api.status.message.get_hl,
+						cond = require("noice").api.status.message.has,
+					},
+					{
+						"filename",
+						path = 1,
+					},
+				},
 				-- add Lazy status indicator
 				lualine_x = {
 					{
@@ -92,8 +103,8 @@ return {
 						cond = lazy_status.has_updates,
 						color = { fg = "#ff9e64" },
 					},
-					{ "encoding" },
 					{ "filetype" },
+					{ "encoding" },
 				},
 			},
 		})
