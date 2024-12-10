@@ -23,9 +23,12 @@ Plugin 'xolox/vim-session'
 Plugin 'scrooloose/syntastic'
 Plugin 'terryma/vim-multiple-cursors'
 Plugin 'junegunn/vim-easy-align'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'SirVer/ultisnips'
-Plugin 'honza/vim-snippets'
+" Plugin 'Valloric/YouCompleteMe'
+" Plugin 'SirVer/ultisnips'
+" Plugin 'honza/vim-snippets'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'rizzatti/dash.vim'
+Plugin 'sickill/vim-monokai'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -78,9 +81,12 @@ set spell
 set wildmode=longest,list,full
 set wildmenu
 set directory=~/.vim/swap,.
-set nobackup       #no backup files
-set nowritebackup  #only in case you don't want a backup file while editing
-set noswapfile     #no swap files
+set nobackup       " no backup files
+set nowritebackup  " only in case you don't want a backup file while editing
+set noswapfile     " no swap files
+
+" set syntax highlighting
+syntax on
 
 "colorscheme torte
 colorscheme monokai
@@ -116,6 +122,7 @@ let g:syntastic_always_populate_loc_list = 1
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
+let g:session_autosave = 'no'
 set laststatus=2
 
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
@@ -160,3 +167,15 @@ nmap <Leader>p :tabnew<CR>:MRU<CR>
 let g:session_lock_enabled      = 0 " Disable all session locking - I know what I'm doing :-).
 let g:session_default_to_last   = 1 " set the default to the last used
 let g:session_autosave_periodic = 1 " save every minute
+let g:session_autoload = 'no'
+
+" apply a register over a region
+nmap <C-z> :norm @
+vmap <C-z> :norm @
+
+set noerrorbells visualbell t_vb=
+autocmd GUIEnter * set visualbell t_vb=
+
+if has("gui_vimr")
+  " VimR specific stuff
+endif
