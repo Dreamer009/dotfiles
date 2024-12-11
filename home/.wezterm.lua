@@ -11,6 +11,9 @@ config.term = "xterm-256color"
 -- Default shell
 config.default_prog = { "/opt/homebrew/bin/nu" }
 
+-- Make it go fast
+config.max_fps = 120
+
 -- Font
 config.font_size = 13
 config.font = wezterm.font({
