@@ -46,9 +46,6 @@ config.window_padding = {
 	bottom = 0,
 }
 
--- don't ask for confirmation on close
-config.window_close_confirmation = "NeverPrompt"
-
 -- config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
