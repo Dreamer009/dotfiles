@@ -22,46 +22,46 @@ program = "/opt/homebrew/bin/nu"
 
 # -----------------------------------------------------------------------------
 # TokyoNight Alacritty Colors
-# Theme: Tokyo Night Moon
-# Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_moon.toml
+# Theme: Tokyo Night Night
+# Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_night.toml
 # -----------------------------------------------------------------------------
 
 # Default colors
 [colors.primary]
-background = '#24283b'
-foreground = '#c8d3f5'
+background = '#1a1b26'
+foreground = '#c0caf5'
 
-[colors.cursor]
-cursor = '#c8d3f5'
-text = '#222436'
+#[colors.cursor]
+#cursor = '#c0caf5'
+#text = '#1a1b26'
 
 # Normal colors
 [colors.normal]
-black = '#1b1d2b'
-red = '#ff757f'
-green = '#c3e88d'
-yellow = '#ffc777'
-blue = '#82aaff'
-magenta = '#c099ff'
-cyan = '#86e1fc'
-white = '#828bb8'
+black = '#15161e'
+red = '#f7768e'
+green = '#9ece6a'
+yellow = '#e0af68'
+blue = '#7aa2f7'
+magenta = '#bb9af7'
+cyan = '#7dcfff'
+white = '#a9b1d6'
 
 # Bright colors
 [colors.bright]
-black = '#444a73'
-red = '#ff8d94'
-green = '#c7fb6d'
-yellow = '#ffd8ab'
-blue = '#9ab8ff'
-magenta = '#caabff'
-cyan = '#b2ebff'
-white = '#c8d3f5'
+black = '#414868'
+red = '#ff899d'
+green = '#9fe044'
+yellow = '#faba4a'
+blue = '#8db0ff'
+magenta = '#c7a9ff'
+cyan = '#a4daff'
+white = '#c0caf5'
 
 # Indexed Colors
 [[colors.indexed_colors]]
 index = 16
-color = '#ff966c'
+color = '#ff9e64'
 
 [[colors.indexed_colors]]
 index = 17
-color = '#c53b53'
+color = '#db4b4b'
