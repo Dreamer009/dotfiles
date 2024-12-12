@@ -56,7 +56,7 @@ config.window_decorations = "RESIZE"
 -- TokyoNight WezTerm Colors
 -- Theme: Tokyo Night Night
 -- Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_storm.toml
--- -----------------------------------------------------------------------------config.colors = {
+-- -----------------------------------------------------------------------------
 
 config.colors = {
 	foreground = "#c0caf5",
