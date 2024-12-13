@@ -1,73 +1,100 @@
 # Dotfiles symlinked on my machine
 
-### Install with stow:
+## Setup
+
+### Install [Homebrew](https://brew.sh)
+
+### Install Dependencies
+
+Required packages:
+
+```bash
+brew install fzf fd bat git-delta eza ripgrep tree neovim starship stow
+brew install --cask font-maple-mono font-recursive-mono-nerd-font
+```
+
+Nice additions:
+
+```bash
+brew install asdf coreutils curl yazi
+```
+
+Optional supported Terminals / GUIs
+
+```bash
+brew install --cask alacritty wezterm
+brew install --cask neovide
+```
+
+### SymLink dotfiles to their correct MacOS directories with stow:
 
 ```bash
 make
 ```
 
-## Quick Start
+# NeoVim Plugin Notes
 
-1. Download a Vim IDE (optional)
+### Telescope
 
-   Recommendations:
+1. `<C-v>` opens in a new vertical split
+2. `<C-t>` opens in a new tab
 
-   a. [Vimr](http://vimr.org/)
+### vim-visual-multi
 
-   b. [MacVim](https://code.google.com/p/macvim/)
+Basic usage:
 
-   install via: `brew install macvim`
+- select words with Ctrl-N (like `Ctrl-d` in Sublime Text/VS Code)
+- create cursors vertically with Ctrl-Down/Ctrl-Up
+- select one character at a time with Shift-Arrows
+- press n/N to get next/previous occurrence
+- press [/] to select next/previous cursor
+- press q to skip current and get next occurrence
+- press Q to remove current cursor/selection
+- start insert mode with i,a,I,A
 
-   Note: MacVim doesn't come with a file browser, so might want to add [NERDTree](https://github.com/scrooloose/nerdtree)
+Two main modes:
 
-2. Set up Vundle:
+- in *cursor mode* commands work as they would in normal mode
+- in *extend mode* commands work as they would in visual mode
+- press Tab to switch between «cursor» and «extend» mode
 
-   `git clone https://github.com/gmarik/Vundle.vim.git ~/.vim/bundle/Vundle.vim`
+Most vim commands work as expected (motions, r to replace characters, ~ to change case, etc). Additionally you can:
 
-3. Copy .vimrc and .jshintrc files to ~/
+- run macros/ex/normal commands at cursors
+- align cursors
+- transpose selections
+- add patterns with regex, or from visual mode
 
-4. Copy /colors dir to ~/.vim
-5. Install jshint for syntastic to work on .js files
+And more... of course, you can enter insert mode and autocomplete will work.
 
-   `sudo npm install -g jshint`
+### mini-ai
 
-6. Install Plugins:
+1. Mutli type edits (works better will registers such as `.`)
+   1. Brackets (supports `({[`):
+      1. `cib` change inside bracket
+      2. `dib` delete inside bracket
+      3. `cab` change around bracket
+      4. `dab` change around bracket
+   2. Quotes (supports ``"`'``):
+      1. `ciq` change inside quote
+      2. `diq` delete inside quote
+      3. `cab` change around bracket
+      4. `dab` change around bracket
+1. Treesitter upgrades
+   1. Arguments:
+      1. `cia` change in next argument
+      2. `cina` change in next argument
+      3. `cana` change around next argument
+      4. `cila` change in last argument
+      5. `cala` change around last argument
+   2. Function:
+      1. `dif` delete in function
+      2. `dinf` delete in next function
+      3. `dana` delete around next function
+      4. `dila` delete in last function
+      5. `dala` delete around last function
 
-   Launch vim and run `:PluginInstall`
+## Install Vi (Non NeoVim) Plugins:
 
-   To install from command line: `vim +PluginInstall +qall`
-
-7. Enable YouCompleteMe tab completion
-
-   `cd ~/.vim/bundel/YouCompleteMe && ./install.sh`
-
-   You may need to install cmake `brew install cmake`
-
-## Vim Plugins
-
-- [gmarik/Vundle.vim](http://github.com/gmarik/Vundle.vim)
-- [tpope/vim-surround](http://github.com/tpope/vim-surround)
-- [tpope/vim-repeat](http://github.com/tpope/vim-repeat)
-- [tpope/vim-fugitive](http://github.com/tpope/vim-fugitive)
-- [tpope/vim-unimpaired](http://github.com/tpope/vim-unimpaired)
-- [mileszs/ack.vim](https://github.com/mileszs/ack.vim)
-- [wincent/command-t](http://github.com/wincent/command-t)
-- [tomtom/tcomment_vim](http://github.com/tomtom/tcomment_vim)
-- [vim-scripts/mru.vim](http://github.com/vim-scripts/mru.vim)
-- [bling/vim-airline](http://github.com/bling/vim-airline)
-- [xolox/vim-misc](http://github.com/xolox/vim-misc)
-- [xolox/vim-session](http://github.com/xolox/vim-session)
-- [terryma/vim-multiple-cursors](http://github.com/terryma/vim-multiple-cursors)
-- [scrooloose/syntastic](http://github.com/scrooloose/syntastic)
-- [Valloric/YouCompleteMe](http://github.com/Valloric/YouCompleteMe)
-- [junegunn/vim-easy-align](http://github.com/junegunn/vim-easy-align)
-- [SirVer/ultisnips](http://github.com/SirVer/ultisnips)
-- [honza/vim-snippets](http://github.com/honza/vim-snippets)
-
-## Fugitive Screencasts
-
-- [A complement to command line git](http://vimcasts.org/e/31)
-- [Working with the git index](http://vimcasts.org/e/32)
-- [Resolving merge conflicts with vimdiff](http://vimcasts.org/e/33)
-- [Browsing the git object database](http://vimcasts.org/e/34)
-- [Exploring the history of a git repository](http://vimcasts.org/e/35)
+Launch vim and run `:PluginInstall`
+To install from command line: `vim +PluginInstall +qall`
