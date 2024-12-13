@@ -9,14 +9,14 @@
 Required packages:
 
 ```bash
-brew install fzf fd bat git-delta eza ripgrep tree neovim starship stow
+brew install nushell carapace fzf fd bat git-delta eza ripgrep tree neovim starship stow
 brew install --cask font-maple-mono font-recursive-mono-nerd-font
 ```
 
 Nice additions:
 
 ```bash
-brew install asdf coreutils curl yazi
+brew install asdf git coreutils curl yazi
 ```
 
 Optional supported Terminals / GUIs
@@ -32,12 +32,33 @@ brew install --cask neovide
 make
 ```
 
-# NeoVim Plugin Notes
+## Command Line Notes
+
+### [NuShell](https://www.nushell.sh)
+
+- Zsh is still the default terminal, but NuShell is the default shell in Alacritty and WezTerm
+- Autocompletion is handled via: [Carapace](https://carapace.sh)
+- eza is aliased as `ls`
+- NuShell ls can be accessed via `nuls`
+- NuShell prompt has been configured with [Starship](https://starship.rs)
+
+### bat
+
+- `cat` has been aliased to `bat` with better syntax highlighting
+
+### fzf
+
+- `<C-t>` search files by name
+- `<C-r>` search recent commands
+
+## NeoVim Plugin Notes
 
 ### Telescope
 
-1. `<C-v>` opens in a new vertical split
-2. `<C-t>` opens in a new tab
+1. `<C-d>` scrolls the preview text down
+2. `<C-u>` scrolls the preview text up
+3. `<C-v>` opens in a new vertical split
+4. `<C-t>` opens in a new tab
 
 ### vim-visual-multi
 
