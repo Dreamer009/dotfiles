@@ -17,7 +17,7 @@ return {
 				mini = {
 					align = "message-left",
 					position = {
-						col = 0,
+						row = 1,
 					},
 					timeout = 5000,
 				},
