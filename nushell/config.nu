@@ -951,6 +951,9 @@ alias vi = nvim
 # NOTE: works with zsh as the default terminal
 alias fzf = fzf --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
+# ---- VS Code -----
+alias code = /usr/local/bin/code
+
 source ./env.nu
 source ~/.cache/carapace/init.nu
 source /opt/homebrew/opt/asdf/libexec/asdf.nu

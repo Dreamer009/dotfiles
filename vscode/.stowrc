@@ -1,0 +1,6 @@
+--target='~/Library/Application Support/Code/User'
+--ignore=history.txt
+--ignore=workspaceStorage/
+--ignore=snippets/
+--ignore=History/
+--ignore=globalStorage/
