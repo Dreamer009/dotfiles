@@ -6,5 +6,6 @@
 --ignore=colors/*
 --ignore=home/*
 --ignore=nushell/*
+--ignore=vscode/*
 --ignore=Makefile
 --ignore=nvim/lazy-lock.json

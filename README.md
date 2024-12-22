@@ -115,6 +115,41 @@ And more... of course, you can enter insert mode and autocomplete will work.
       4. `dila` delete in last function
       5. `dala` delete around last function
 
+## VS Code
+
+Install the cmdline tools
+
+```
+code --install-extension ms-vscode.cpptools
+```
+
+List current extensions
+
+```
+code --list-extensions
+```
+
+Install extensions
+
+```
+code --install-extension bradlc.vscode-tailwindcss
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension deerawan.vscode-dash
+code --install-extension eamodio.gitlens
+code --install-extension enkia.tokyo-night
+code --install-extension esbenp.prettier-vscode
+code --install-extension github.codespaces
+code --install-extension github.copilot
+code --install-extension github.copilot-chat
+code --install-extension misogi.ruby-rubocop
+code --install-extension mjmcloug.vscode-elixir
+code --install-extension ms-vsliveshare.vsliveshare
+code --install-extension shopify.ruby-lsp
+code --install-extension ue.alphabetical-sorter
+code --install-extension vscodevim.vim
+code --install-extension vue.volar
+```
+
 ## Install Vi (Non NeoVim) Plugins:
 
 Launch vim and run `:PluginInstall`
