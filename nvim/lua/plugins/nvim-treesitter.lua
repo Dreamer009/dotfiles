@@ -1,5 +1,6 @@
 return {
   "nvim-treesitter/nvim-treesitter",
+  requires = { { "nvim-lua/plenary.nvim" } },
   event = { "BufReadPre", "BufNewFile" },
   build = ":TSUpdate",
   dependencies = {
