@@ -1,19 +1,19 @@
 return {
-	"akinsho/toggleterm.nvim",
-	version = "*",
-	opts = {},
+  "akinsho/toggleterm.nvim",
+  version = "*",
+  opts = {},
 
-	config = function()
-		local term = require("toggleterm")
+  config = function()
+    local term = require("toggleterm")
 
-		term.setup({
-			direction = "float",
-			open_mapping = [[<C-\>]],
-		})
+    term.setup({
+      direction = "float",
+      open_mapping = [[<C-\>]],
+    })
 
-		-- set keymaps
-		local keymap = vim.keymap -- for conciseness
+    -- set keymaps
+    local keymap = vim.keymap -- for conciseness
 
-		keymap.set({ "n", "v" }, "<leader>tt", ":ToggleTerm<CR>", { desc = "Open terminal" })
-	end,
+    keymap.set({ "n", "v" }, "<leader>tt", ":ToggleTerm<CR>", { desc = "Open terminal" })
+  end,
 }
