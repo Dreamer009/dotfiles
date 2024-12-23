@@ -1,7 +1,7 @@
 --target=~/.config
 --ignore=.stowrc
 --ignore=DS_Store
---ignore=.git/*
+--ignore=/.git/*
 --ignore=atuin/*
 --ignore=colors/*
 --ignore=home/*
