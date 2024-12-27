@@ -1,19 +1,33 @@
 # Fonts
 font-family = "RecMonoCasual Nerd Font Mono"
-font-family-italic = "Maple Mono"
-font-family-bold-italic = "Maple Mono"
-font-size = 13
+font-family-italic = "Maple Mono NF"
+font-family-bold-italic = "Maple Mono NF"
+font-size = 14
+font-thicken = true
+
 adjust-underline-position = 4
+
+# Cursor
+cursor-invert-fg-bg = true
 
 # Mouse
 mouse-hide-while-typing = true
 # mouse-scroll-multiplier = 1
 
 # Theme
-theme = ~/.config/ghostty/tokyonight_night
-cursor-invert-fg-bg = true
-background-opacity = 0.9
+theme = tokyonight_night
+macos-titlebar-style = tabs
 window-theme = ghostty
+# background-opacity = 0.9
+
+# Custom icon
+macos-icon = custom-style
+macos-icon-frame = aluminum
+macos-icon-ghost-color = white
+macos-icon-screen-color = black
+
+# Nushell
+command = "/opt/homebrew/bin/nu"
 
 # keybindings
 # keybind = clear
@@ -38,3 +52,4 @@ window-theme = ghostty
 # Other
 copy-on-select = clipboard
 shell-integration-features = cursor,sudo,no-title
+scrollback-limit = 10000

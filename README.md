@@ -10,7 +10,7 @@ Required packages:
 
 ```bash
 brew install nushell carapace fzf fd bat git-delta eza ripgrep tree neovim starship stow
-brew install --cask font-maple-mono font-recursive-mono-nerd-font
+brew install --cask font-maple-mono-nf font-recursive-mono-nerd-font
 ```
 
 Nice additions:
@@ -22,7 +22,7 @@ brew install asdf git coreutils curl yazi lazygit
 Optional supported Terminals / GUIs
 
 ```bash
-brew install --cask alacritty wezterm
+brew install --cask alacritty wezterm ghostty
 brew install --cask neovide
 ```
 

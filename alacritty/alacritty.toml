@@ -8,11 +8,10 @@ opacity = 1
 blur = false
 
 [font]
-# normal.family = "MesloLGS Nerd Font Mono"
 normal.family = "RecMonoCasual Nerd Font Mono"
 offset.y = 5
-italic.family = "Maple Mono"
-size = 13
+italic.family = "Maple Mono NF"
+size = 14
 
 [scrolling]
 history = 10000

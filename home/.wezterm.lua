@@ -18,7 +18,7 @@ config.max_fps = 120
 config.scrollback_lines = 10000
 
 -- Font
-config.font_size = 13
+config.font_size = 14
 config.font = wezterm.font({
   family = "RecMonoCasual Nerd Font Mono",
   -- weight = "Bold",
@@ -27,17 +27,12 @@ config.font_rules = {
   {
     italic = true,
     font = wezterm.font({
-      family = "Maple Mono",
+      family = "Maple Mono NF",
       italic = true,
       -- weight = "Bold",
     }), -- Custom font for italic text
   },
 }
--- config.font_size = 15
--- config.font = wezterm.font({
--- 	family = "Inconsolata Nerd Font Mono",
--- 	weight = "Bold",
--- })
 
 config.window_padding = {
   left = 0,

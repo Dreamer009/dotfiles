@@ -954,6 +954,9 @@ alias fzf = fzf --multi --preview="if [ -d {} ]; then eza --tree --color=always 
 # ---- VS Code -----
 alias code = /usr/local/bin/code
 
+# ---- LazyGit -----
+alias lg = lazygit
+
 source ./env.nu
 source ~/.cache/carapace/init.nu
 source /opt/homebrew/opt/asdf/libexec/asdf.nu
