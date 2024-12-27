@@ -13,6 +13,7 @@ config.default_prog = { "/opt/homebrew/bin/nu" }
 
 -- Make it go fast
 config.max_fps = 120
+config.prefer_egl = true
 
 -- Increase scrollback_lines
 config.scrollback_lines = 10000
