@@ -18,7 +18,7 @@ config.max_fps = 120
 config.scrollback_lines = 10000
 
 -- Font
-config.font_size = 14
+config.font_size = 13
 config.font = wezterm.font({
   family = "RecMonoCasual Nerd Font Mono",
   -- weight = "Bold",

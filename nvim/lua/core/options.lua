@@ -3,7 +3,7 @@ vim.cmd("let g:netrw_liststyle = 3")
 local opt = vim.opt -- for conciseness
 
 -- font for neovim gui editors
-opt.guifont = "Maple Mono NF:i,RecMonoCasual Nerd Font Mono"
+opt.guifont = "Maple Mono NF:h13:i,RecMonoCasual Nerd Font Mono:h13"
 
 -- line numbers
 opt.number = true -- shows absolute line number on cursor line (when relative number is on)

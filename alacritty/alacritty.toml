@@ -11,7 +11,7 @@ blur = false
 normal.family = "RecMonoCasual Nerd Font Mono"
 offset.y = 5
 italic.family = "Maple Mono NF"
-size = 14
+size = 13
 
 [scrolling]
 history = 10000
