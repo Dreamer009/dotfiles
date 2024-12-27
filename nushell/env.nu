@@ -119,6 +119,9 @@ use std "path add"
 path add /opt/homebrew/bin
 path add /.asdf/asdf.sh
 
+# NeoVim
+$env.EDITOR = "nvim"
+
 # ASDF
 $env.ASDF_DIR = (brew --prefix asdf | str trim | into string | path join 'libexec')
 

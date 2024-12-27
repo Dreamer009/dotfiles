@@ -16,7 +16,7 @@ brew install --cask font-maple-mono-nf font-recursive-mono-nerd-font
 Nice additions:
 
 ```bash
-brew install asdf git coreutils curl yazi lazygit
+brew install asdf git coreutils curl libpq yazi lazygit
 ```
 
 Optional supported Terminals / GUIs
