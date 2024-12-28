@@ -1,1 +1,9 @@
-editor: nvim
+---
+promptToReturnFromSubprocess: false
+
+update:
+  # One of: 'prompt' (default) | 'background' | 'never'
+  method: prompt
+
+  # Period in days between update checks
+  days: 1
