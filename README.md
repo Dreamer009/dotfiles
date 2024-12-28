@@ -1,5 +1,19 @@
 # Dotfiles symlinked on my machine
 
+## MacOS
+
+Repeat key strokes
+
+```
+defaults write -g ApplePressAndHoldEnabled -bool false
+```
+
+Finder application set column view to default
+
+```
+defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
+```
+
 ## Setup
 
 ### Install [Homebrew](https://brew.sh)
