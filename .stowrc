@@ -5,6 +5,7 @@
 --ignore=atuin/*
 --ignore=colors/*
 --ignore=home/*
+--ignore=lazygit/*
 --ignore=nushell/*
 --ignore=vscode/*
 --ignore=Makefile
