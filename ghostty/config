@@ -4,6 +4,7 @@ font-family-italic = "Maple Mono NF"
 font-family-bold-italic = "Maple Mono NF"
 font-size = 13
 font-thicken = true
+font-feature = -calt
 
 adjust-underline-position = 4
 

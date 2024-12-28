@@ -2,6 +2,7 @@ require("core")
 require("lazy-init")
 
 if vim.g.neovide then
+  vim.g.neovide_harfbuzz_features = { "calt=0" }
   vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
   vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
 end
