@@ -6,6 +6,7 @@ if vim.g.neovide then
   vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
 end
 
+vim.opt.showtabline = 1
 vim.opt.list = true -- Enable list mode to show special characters
 vim.opt.listchars = {
   tab = " ", -- Display tabs as "▸ " (customize as needed)
