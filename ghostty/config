@@ -37,4 +37,5 @@ auto-update-channel = stable
 copy-on-select = clipboard
 shell-integration-features = cursor,sudo,no-title
 scrollback-limit = 10000
+window-padding-balance = true
 window-save-state = always
