@@ -37,7 +37,7 @@ return {
           cterm_color = "52",
           name = "Erb",
         },
-        ["gemfile$"] = {
+        ["gemfile"] = {
           icon = "",
           color = colors.red,
           cterm_color = "52",
