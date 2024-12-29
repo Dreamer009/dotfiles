@@ -5,9 +5,10 @@ if vim.g.neovide then
   vim.g.neovide_harfbuzz_features = { "calt=0" }
   vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
   vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
+else
+  vim.opt.showtabline = 1
 end
 
-vim.opt.showtabline = 1
 vim.opt.list = true -- Enable list mode to show special characters
 vim.opt.listchars = {
   tab = " ", -- Display tabs as "▸ " (customize as needed)
