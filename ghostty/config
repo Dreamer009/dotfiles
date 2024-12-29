@@ -1,12 +1,13 @@
 # Fonts
 font-family = "RecMonoCasual Nerd Font Mono"
+# font-family = "GeistMono Nerd Font Mono",
+# font-family = "RobotoMono Nerd Font Mono",
+# font-family = "CommitMono Nerd Font Mono",
 font-family-italic = "Maple Mono NF"
 font-family-bold-italic = "Maple Mono NF"
 font-size = 13
-font-thicken = true
 font-feature = -calt
-
-adjust-underline-position = 4
+# font-thicken = true
 
 # Mouse
 mouse-hide-while-typing = true
@@ -31,7 +32,9 @@ command = "/opt/homebrew/bin/nu"
 keybind = global:ctrl+,=toggle_quick_terminal
 
 # Other
+adjust-underline-position = 4
 auto-update-channel = stable
 copy-on-select = clipboard
 shell-integration-features = cursor,sudo,no-title
 scrollback-limit = 10000
+window-save-state = always
