@@ -18,13 +18,21 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 ### Install [Homebrew](https://brew.sh)
 
+### SymLink dotfiles to their correct MacOS directories with stow:
+
+```bash
+brew install stow
+make
+```
+
 ### Install Dependencies
 
 Required packages:
 
 ```bash
-brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree neovim starship stow
+brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree neovim starship
 brew install --cask font-maple-mono-nf font-recursive-mono-nerd-font
+brew services start atuin
 ```
 
 Nice additions:
@@ -32,7 +40,6 @@ Nice additions:
 ```bash
 brew install asdf git coreutils curl libpq btop tldr yazi
 brew install jesseduffield/lazygit/lazygit
-brew services start atuin
 ```
 
 Optional supported Terminals / GUIs
@@ -40,12 +47,6 @@ Optional supported Terminals / GUIs
 ```bash
 brew install --cask alacritty wezterm ghostty
 brew install --cask neovide
-```
-
-### SymLink dotfiles to their correct MacOS directories with stow:
-
-```bash
-make
 ```
 
 ## Command Line Notes
