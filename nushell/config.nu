@@ -896,25 +896,6 @@ $env.config = {
       event: { edit: selectall }
     }
     {
-      name: fuzzy_history_fzf
-      modifier: control
-      keycode: char_r
-      mode: [emacs , vi_normal, vi_insert]
-      event: {
-        send: executehostcommand
-        cmd: "commandline edit --replace (
-          history
-          | get command
-          | uniq
-          | reverse
-          | str join (char -i 0)
-          | fzf --scheme=history --read0 --tiebreak=chunk --preview='echo {..}' --preview-window='bottom:3:wrap' --bind alt-up:preview-up,alt-down:preview-down --height=70% -q (commandline) --preview='echo {} | nu --stdin -c \'nu-highlight\''
-          | decode utf-8
-          | str trim
-        )"
-      }
-    }
-    {
       name: fuzzy_file
       modifier: control
       keycode: char_t
@@ -958,6 +939,7 @@ alias code = /usr/local/bin/code
 alias lg = lazygit
 
 source ./env.nu
+source ~/.config/atuin/init.nu
 source ~/.cache/carapace/init.nu
 source /opt/homebrew/opt/asdf/libexec/asdf.nu
 use ~/.cache/starship/init.nu

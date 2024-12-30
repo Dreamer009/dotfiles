@@ -23,15 +23,16 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 Required packages:
 
 ```bash
-brew install nushell carapace fzf fd bat git-delta eza ripgrep tree neovim starship stow
+brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree neovim starship stow
 brew install --cask font-maple-mono-nf font-recursive-mono-nerd-font
 ```
 
 Nice additions:
 
 ```bash
-brew install asdf git coreutils curl libpq btop yazi
+brew install asdf git coreutils curl libpq btop tldr yazi
 brew install jesseduffield/lazygit/lazygit
+brew services start atuin
 ```
 
 Optional supported Terminals / GUIs
