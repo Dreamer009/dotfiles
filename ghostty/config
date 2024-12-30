@@ -23,13 +23,15 @@ window-theme = ghostty
 macos-icon = custom-style
 macos-icon-frame = aluminum
 macos-icon-ghost-color = white
-macos-icon-screen-color = black
+# Baltimore Ravens purple
+macos-icon-screen-color = 241773
 
 # Nushell
 command = "/opt/homebrew/bin/nu"
 
 # Quick Terminal
 keybind = global:ctrl+,=toggle_quick_terminal
+keybind = super+f=write_screen_file:open
 
 # Other
 adjust-underline-position = 4

@@ -34,18 +34,6 @@ def create_right_prompt [] {
   ([$last_exit_code, (char space), $time_segment] | str join)
 }
 
-# yazi alias
-def --env y [...args] {
-  let tmp = (mktemp -t "yazi-cwd.XXXXXX")
-  yazi ...$args --cwd-file $tmp
-  let cwd = (open $tmp)
-  if $cwd != "" and $cwd != $env.PWD {
-    cd $cwd
-  }
-  rm -fp $tmp
-}
-
-
 def nufzf [] {
   $in
   | each { |i| $i | to json --raw}
@@ -129,6 +117,31 @@ $env.ASDF_DIR = (brew --prefix asdf | str trim | into string | path join 'libexe
 $env.FZF_DEFAULT_COMMAND = 'fd --hidden --strip-cwd-prefix --exclude .git'
 $env.FZF_CTRL_T_COMMAND = '$FZF_DEFAULT_COMMAND'
 $env.FZF_ALT_C_COMMAND = 'fd --type=d --hidden --strip-cwd-prefix --exclude .git'
+
+# fzf color scheme
+$env.FZF_DEFAULT_OPTS = '
+  --highlight-line
+  --info=inline-right
+  --ansi
+  --layout=reverse
+  --border=none
+  --color=bg+:#283457
+  --color=bg:#16161e
+  --color=border:#27a1b9
+  --color=fg:#c0caf5
+  --color=gutter:#16161e
+  --color=header:#ff9e64
+  --color=hl+:#2ac3de
+  --color=hl:#2ac3de
+  --color=info:#545c7e
+  --color=marker:#ff007c
+  --color=pointer:#ff007c
+  --color=prompt:#2ac3de
+  --color=query:#c0caf5:regular
+  --color=scrollbar:#27a1b9
+  --color=separator:#ff9e64
+  --color=spinner:#ff007c
+'
 
 # ----- Bat (better cat) -----
 $env.BAT_THEME = 'TokyonightStorm'
