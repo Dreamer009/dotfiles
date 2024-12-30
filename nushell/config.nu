@@ -909,7 +909,7 @@ $env.config = {
         # cmd: "commandline edit --replace (fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}' )"
 
         # NOTE: works with zsh as the default terminal
-        cmd: "commandline edit --replace (fzf --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi' )"
+        cmd: "commandline edit ((commandline) + (fzf --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi'))"
       }
     }
   ]
@@ -921,6 +921,9 @@ alias cat = bat
 # ---- Eza (better ls) -----
 alias nuls = ls
 alias ls = eza -a --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions --ignore-glob=".DS_Store"
+
+# ---- LazyGit -----
+alias lg = lazygit
 
 # ---- Nvim (and old vi habbits) -----
 alias v = vi
@@ -935,8 +938,8 @@ alias fzf = fzf --multi --preview="if [ -d {} ]; then eza --tree --color=always 
 # ---- VS Code -----
 alias code = /usr/local/bin/code
 
-# ---- LazyGit -----
-alias lg = lazygit
+# ---- Yazi -----
+alias y = yazi
 
 source ./env.nu
 source ~/.config/atuin/init.nu
