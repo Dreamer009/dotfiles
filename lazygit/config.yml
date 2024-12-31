@@ -1,6 +1,10 @@
 ---
 promptToReturnFromSubprocess: false
 
+keybinding:
+  universal:
+    edit: "o" # Change the edit action to 'o'
+
 update:
   # One of: 'prompt' (default) | 'background' | 'never'
   method: prompt
