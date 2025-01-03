@@ -22,9 +22,10 @@ config.scrollback_lines = 10000
 config.font_size = 13
 config.font = wezterm.font({
   family = "RecMonoCasual Nerd Font Mono",
-  -- family = "GeistMono Nerd Font Mono",
-  -- family = "RobotoMono Nerd Font Mono",
   -- family = "CommitMono Nerd Font Mono",
+  -- family = "SF Mono",
+  -- family = "JetBrainsMono Nerd Font Mono",
+  -- family = "MesloLGM Nerd Font Mono",
   harfbuzz_features = { "calt=0" },
   -- weight = "Bold",
 })
