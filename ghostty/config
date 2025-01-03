@@ -43,6 +43,7 @@ adjust-underline-position = 4
 auto-update-channel = stable
 copy-on-select = clipboard
 mouse-hide-while-typing = true
+resize-overlay = never
 shell-integration-features = cursor,sudo,no-title
 scrollback-limit = 10000
 window-padding-balance = true
