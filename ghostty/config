@@ -1,23 +1,27 @@
 # Fonts
-font-family = "Rec Mono Simplified"
-# font-family = "GeistMono Nerd Font Mono",
-# font-family = "RobotoMono Nerd Font Mono",
-# font-family = "CommitMono Nerd Font Mono",
-font-family-italic = "Maple Mono NF"
-font-family-bold-italic = "Maple Mono NF"
+# font-family = "RecMonoCasual Nerd Font Mono"
+# font-family = "RecMonoDuotone Nerd Font Mono"
+# font-family = "RecMonoLinear Nerd Font Mono"
+# font-family = "RecMonoSmCasual Nerd Font Mono"
+# font-family = "CommitMono Nerd Font Mono"
+# font-family = "SF Mono"
+# font-family = "Rec Mono Simplified"
+# font-family-italic = "Maple Mono NF"
+# font-family-bold-italic = "Maple Mono NF"
 font-size = 13
 font-feature = -calt
 # font-thicken = true
-
-# Mouse
-mouse-hide-while-typing = true
-# mouse-scroll-multiplier = 1
 
 # Theme
 theme = tokyonight_night
 macos-titlebar-style = tabs
 window-theme = ghostty
 # background-opacity = 0.9
+
+# Retro CRT look
+# custom-shader = ./shaders/bettercrt.glsl
+# custom-shader = ./shaders/bloom.glsl
+# custom-shader-animation = always
 
 # Custom icon
 macos-icon = custom-style
@@ -37,6 +41,7 @@ keybind = super+f=write_screen_file:open
 adjust-underline-position = 4
 auto-update-channel = stable
 copy-on-select = clipboard
+mouse-hide-while-typing = true
 shell-integration-features = cursor,sudo,no-title
 scrollback-limit = 10000
 window-padding-balance = true
