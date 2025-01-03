@@ -909,7 +909,7 @@ $env.config = {
         # cmd: "commandline edit --replace (fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}' )"
 
         # NOTE: works with zsh as the default terminal
-        cmd: "commandline edit ((commandline) + (fzf --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi'))"
+        cmd: "commandline edit ((commandline) + (fzf --exact --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi'))"
       }
     }
   ]
@@ -933,7 +933,7 @@ alias vi = nvim
 # NOTE: works with nushell as the default terminal
 # alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
 # NOTE: works with zsh as the default terminal
-alias fzf = fzf --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+alias fzf = fzf --exact --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
 # ---- VS Code -----
 alias code = /usr/local/bin/code

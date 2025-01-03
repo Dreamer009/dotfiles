@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:$HOME/.local/bin:/usr/local/bin:$PATH
 
 # asdf
-. $HOME/.asdf/asdf.sh
+# . $HOME/.asdf/asdf.sh
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
@@ -109,8 +109,11 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# atuin
+eval "$(atuin init zsh)"
+
 # set up fzf key binding and fuzzy completion
-eval "$(fzf --zsh)"
+eval "$(fzf --zsh --exact)"
 
 # -- Use fd instead of fzf --
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"

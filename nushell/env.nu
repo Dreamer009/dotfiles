@@ -38,7 +38,7 @@ def nufzf [] {
   $in
   | each { |i| $i | to json --raw}
   | str join "\n"
-  | fzf
+  | fzf --exact
   | from json
 }
 
@@ -105,7 +105,7 @@ use std "path add"
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
 path add /opt/homebrew/bin
-path add /.asdf/asdf.sh
+# path add /.asdf/asdf.sh
 
 # NeoVim
 $env.EDITOR = "nvim"
