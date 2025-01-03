@@ -54,6 +54,7 @@ return {
         "make",
         "regex",
         "nu",
+        "glsl",
       },
       incremental_selection = {
         enable = true,
