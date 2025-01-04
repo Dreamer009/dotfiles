@@ -21,12 +21,12 @@ config.scrollback_lines = 10000
 -- Font
 config.font_size = 13
 config.font = wezterm.font({
-  family = "RecMonoCasual Nerd Font Mono",
-  -- family = "CommitMono Nerd Font Mono",
-  -- family = "MonoLisa Trial",
-  -- family = "SF Mono",
-  -- family = "JetBrainsMono Nerd Font Mono",
-  harfbuzz_features = { "calt=0" },
+  family = "JetBrainsMono Nerd Font Mono",
+  harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
+
+  -- family = "RecMonoCasual Nerd Font Mono",
+  -- family = "MonoLisa Custom",
+  -- harfbuzz_features = { "calt=0" },
   -- weight = "Bold",
 })
 config.font_rules = {

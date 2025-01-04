@@ -1,23 +1,29 @@
-# Fonts
-# font-family = "RecMonoCasual Nerd Font Mono"
-# font-family = "RecMonoDuotone Nerd Font Mono"
-# font-family = "RecMonoLinear Nerd Font Mono"
-# font-family = "RecMonoSmCasual Nerd Font Mono"
-# font-family = "CommitMono Nerd Font Mono"
-font-family = "MonoLisa Trial"
-# font-family = "SF Mono"
-# font-family = "Rec Mono Simplified"
+# Font General
+font-size = 13
+
+# MonoLisa
+font-family = "MonoLisa Custom"
+font-style-italic = "Light Italic"
+font-style-bold-italic = "SemiBold Italic"
+
+# # JetBrainsMono + Maple Mono
+# font-family = "JetBrainsMono Nerd Font Mono"
+# # JetBrainsMono OpenType features settings
+# # https://github.com/JetBrains/JetBrainsMono
+# font-feature = zero
+# # Adds gaps in ≠ ≠= == === ligatures.
+# font-feature = ss19
+# # g with more complex construction.
+# font-feature = cv03
+# # alternate 2 6 9
+# font-feature = cv18
 # font-family-italic = "Maple Mono NF"
 # font-family-bold-italic = "Maple Mono NF"
-font-size = 13
-font-feature = -calt
-# font-thicken = true
 
 # Theme
 theme = tokyonight_night
 macos-titlebar-style = tabs
 window-theme = ghostty
-# background-opacity = 0.9
 
 # Retro CRT look
 # custom-shader = ./shaders/bettercrt.glsl
