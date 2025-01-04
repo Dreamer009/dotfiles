@@ -30,12 +30,10 @@ font-feature = ss17
 # font-family-italic = "RecMonoCasual Nerd Font Mono"
 # font-family-bold-italic = "RecMonoCasual Nerd Font Mono"
 
-# MonoLisa italic overrides
-# font-style-italic = "Light Italic"
-# font-style-bold-italic = "SemiBold Italic"
-
 # Maple Mono Italics
 # font-family-italic = "Maple Mono NF"
+# # only needed when pairing with MonoLisa
+# # font-style-italic = "BoldItalic"
 # font-family-bold-italic = "Maple Mono NF"
 # # Classic '@', '$', '%', '&', 'Q', '=>', '->'
 # font-feature = cv01

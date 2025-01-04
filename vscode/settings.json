@@ -1,26 +1,28 @@
 {
-    {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true,
-        "editor.minimap.enabled": false,
-        "explorer.autoReveal": false,
-        "files.trimTrailingWhitespace": true,
-        "javascript.preferences.quoteStyle": "single",
-        "liveshare.launcherClient": "visualStudioCode",
-        "prettier.singleQuote": true,
-        "security.workspace.trust.untrustedFiles": "open",
-        "vue.inlayHints.optionsWrapper": false,
-        "editor.codeActionsOnSave": {
-          "source.fixAll.eslint": "explicit"
-        },
-        "[ruby]": {
-          "editor.defaultFormatter": "misogi.ruby-rubocop"
-        },
-        "breadcrumbs.symbolPath": "off",
-        "workbench.preferredDarkColorTheme": "Tokyo Night Storm",
-        "window.autoDetectColorScheme": true,
-        "window.zoomLevel": -1,
-        "ruby.rubocop.useBundler": true,
-        "rubyLsp.rubyVersionManager": "asdf"
-      }
-    }
+  "[ruby]": {
+    "editor.defaultFormatter": "misogi.ruby-rubocop"
+  },
+  "breadcrumbs.symbolPath": "off",
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.fontFamily": "MonoLisa Custom",
+  "editor.fontLigatures": true,
+  "editor.formatOnSave": true,
+  "editor.lineHeight": 0,
+  "editor.minimap.enabled": false,
+  "editor.tabSize": 2,
+  "explorer.autoReveal": false,
+  "files.trimTrailingWhitespace": true,
+  "javascript.preferences.quoteStyle": "single",
+  "liveshare.launcherClient": "visualStudioCode",
+  "prettier.singleQuote": true,
+  "ruby.rubocop.useBundler": true,
+  "rubyLsp.rubyVersionManager": "asdf",
+  "security.workspace.trust.untrustedFiles": "open",
+  "vue.inlayHints.optionsWrapper": false,
+  "window.autoDetectColorScheme": true,
+  "window.zoomLevel": -1,
+  "workbench.preferredDarkColorTheme": "Tokyo Night Storm"
+}
