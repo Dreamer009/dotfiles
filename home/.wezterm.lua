@@ -23,20 +23,19 @@ config.font_size = 13
 config.font = wezterm.font({
   family = "JetBrainsMono Nerd Font Mono",
   harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
-
-  -- family = "RecMonoCasual Nerd Font Mono",
-  -- family = "MonoLisa Custom",
-  -- harfbuzz_features = { "calt=0" },
-  -- weight = "Bold",
 })
+-- config.font = wezterm.font({
+--   family = "RecMonoCasual Nerd Font Mono",
+--   harfbuzz_features = { "calt=0" },
+-- })
 config.font_rules = {
   {
     italic = true,
     font = wezterm.font({
       family = "Maple Mono NF",
+      harfbuzz_features = { "cv01" },
       italic = true,
-      -- weight = "Bold",
-    }), -- Custom font for italic text
+    }),
   },
 }
 
