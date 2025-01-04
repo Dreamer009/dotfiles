@@ -1,3 +1,18 @@
 [flavor]
 dark = "catppuccin-mocha"
 light = "catppuccin-mocha"
+
+[icon]
+prepend_exts = [
+  { name = "erb", text = "", fg = "#f7768e" },
+  { name = "gemspec", text = "", fg = "#f7768e" },
+  { name = "rake", text = "", fg = "#f7768e" },
+  { name = "rb", text = "", fg = "#f7768e" },
+]
+
+prepend_files = [
+  { name = "brewfile", text = "", fg = "#f7768e" },
+  { name = "config.ru", text = "", fg = "#f7768e" },
+  { name = "Gemfile", text = "", fg = "#f7768e" },
+  { name = "Rakefile", text = "", fg = "#f7768e" },
+]
