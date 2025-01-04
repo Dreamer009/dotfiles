@@ -45,7 +45,7 @@ brew install jesseduffield/lazygit/lazygit
 Optional supported Terminals / GUIs
 
 ```bash
-brew install --cask alacritty wezterm ghostty
+brew install --cask wezterm ghostty
 brew install --cask neovide
 ```
 
