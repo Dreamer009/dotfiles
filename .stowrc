@@ -7,5 +7,6 @@
 --ignore=lazygit/*
 --ignore=nushell/*
 --ignore=vscode/*
+--ignore=zed/prompts/*
 --ignore=Makefile
 --ignore=nvim/lazy-lock.json
