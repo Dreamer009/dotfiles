@@ -944,5 +944,6 @@ alias y = yazi
 source ./env.nu
 source ~/.config/atuin/init.nu
 source ~/.cache/carapace/init.nu
+source ~/.zoxide.nu
 source /opt/homebrew/opt/asdf/libexec/asdf.nu
 use ~/.cache/starship/init.nu
