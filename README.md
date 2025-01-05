@@ -30,7 +30,7 @@ make
 Required packages:
 
 ```bash
-brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree neovim starship
+brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree zoxide neovim starship
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf font-recursive-mono-nerd-font
 brew services start atuin
 ```

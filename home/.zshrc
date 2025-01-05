@@ -115,6 +115,9 @@ eval "$(atuin init zsh)"
 # set up fzf key binding and fuzzy completion
 eval "$(fzf --zsh --exact)"
 
+# set up zoxide
+eval "$(zoxide init --cmd cd zsh)"
+
 # -- Use fd instead of fzf --
 export FZF_DEFAULT_COMMAND="fd --hidden --strip-cwd-prefix --exclude .git"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
@@ -144,6 +147,19 @@ alias cat="bat"
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
+# ---- LazyGit -----
+alias lg="lazygit"
+
+# ---- Nvim (and old vi habbits) -----
+alias v="vi"
+alias vi="nvim"
+
+# ---- VS Code -----
+alias code="/usr/local/bin/code"
+
+# ---- Yazi -----
+alias y="yazi"
+
 show_file_or_dir_preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
 
 export FZF_CTRL_T_OPTS="--preview '$show_file_or_dir_preview'"
@@ -168,5 +184,4 @@ export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
-
 source /opt/homebrew/opt/asdf/libexec/asdf.sh
