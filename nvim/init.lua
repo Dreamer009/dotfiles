@@ -9,6 +9,15 @@ else
   vim.opt.showtabline = 1
 end
 
+-- disable highlighted search by hitting escape
+vim.keymap.set("n", "<Esc>", function()
+  if vim.v.hlsearch == 1 then
+    vim.cmd("noh")
+  else
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", false)
+  end
+end, { silent = true })
+
 vim.opt.list = true -- Enable list mode to show special characters
 vim.opt.listchars = {
   tab = " ", -- Display tabs as "▸ " (customize as needed)
