@@ -18,6 +18,14 @@ vim.keymap.set("n", "<Esc>", function()
   end
 end, { silent = true })
 
+-- get file relative path
+vim.api.nvim_set_keymap(
+  "n",
+  "<leader>rp",
+  [[:let @+ = expand('%')<CR>]],
+  { noremap = true, silent = true, desc = "Get reative file path" }
+)
+
 vim.opt.list = true -- Enable list mode to show special characters
 vim.opt.listchars = {
   tab = " ", -- Display tabs as "▸ " (customize as needed)
