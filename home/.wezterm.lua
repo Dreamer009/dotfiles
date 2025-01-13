@@ -25,9 +25,16 @@ config.font = wezterm.font({
   harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
 })
 -- config.font = wezterm.font({
---   family = "RecMonoCasual Nerd Font Mono",
---   harfbuzz_features = { "calt=0" },
+--   family = "MonoLisa Default",
+--   harfbuzz_features = { "zero", "ss03", "ss07", "ss09", "ss17", "ss18" },
 -- })
+-- config.font = wezterm.font({ family = "RecMonoCasual Nerd Font Mono", })
+-- config.line_height = 1.1
+-- config.font = wezterm.font({
+--   family = "CommitMono Nerd Font Mono",
+--   harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05" },
+-- })
+-- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
 config.font_rules = {
   {
     italic = true,

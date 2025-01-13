@@ -3,6 +3,10 @@ font-size = 13
 
 # MonoLisa
 font-family = "MonoLisa Default"
+font-style = "Medium"
+font-style-bold = "SemiBold"
+font-style-italic = "Medium Italic"
+font-style-bold-italic = "SemiBold Italic"
 # Fallback font for Nerd Font Icons
 font-family = "JetBrainsMono Nerd Font Mono"
 # Slashed zero 0
@@ -11,16 +15,14 @@ font-feature = zero
 font-feature = ss03
 # Alt greater equal >=
 font-feature = ss09
-# Alt at @
-font-feature = ss18
 # Alt .= and ..=
 font-feature = ss17
+# Alt at @
+font-feature = ss18
 
 # JetBrainsMono
 # font-family = "JetBrainsMono Nerd Font Mono"
 # font-feature = zero
-# # Adds gaps in ≠ ≠= == === ligatures.
-# font-feature = ss19
 # # g with more complex construction.
 # font-feature = cv03
 # # alternate 2 6 9
