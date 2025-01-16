@@ -10,7 +10,6 @@ return {
         "html",
         "lua_ls",
         "pylsp",
-        "rubocop",
         "ruby_lsp",
         "sqlls",
         "tailwindcss",
