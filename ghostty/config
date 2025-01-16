@@ -12,7 +12,7 @@ font-family = "JetBrainsMono Nerd Font Mono"
 # Slashed zero 0
 font-feature = zero
 # Alt g
-font-feature = ss03
+# font-feature = ss03
 # Alt greater equal >=
 font-feature = ss09
 # Alt .= and ..=
