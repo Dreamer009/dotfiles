@@ -61,7 +61,7 @@ brew install --cask neovide
 
 ### [NuShell](https://www.nushell.sh)
 
-- Zsh is still the default terminal, but NuShell is the default shell in Alacritty and WezTerm
+- Zsh is still the default terminal, but NuShell is the default shell in Ghostty and WezTerm
 - Autocompletion is handled via: [Carapace](https://carapace.sh)
 - eza is aliased as `ls`
 - NuShell ls can be accessed via `nuls`
@@ -76,6 +76,70 @@ brew install --cask neovide
 - `<C-t>` search files by name
 - `<C-r>` search recent commands
 
+### [LazyGit](https://github.com/jesseduffield/lazygit)
+
+`lazygit` or `lg` to launch
+`<Space>` to add remove file
+`<Enter>` to stage hunks
+`c` to commit
+`?` for
+`[1-5]` for quick navigation
+
+#### Vim Style Bindings:
+
+`h` quick navigation up
+`j` up
+`k` down
+`l` quick navigation down
+`q` to quit
+
+### [Yazi](https://yazi-rs.github.io/docs/installation) file manager
+
+`yazi` or `y` to launch
+
+#### Vim Style Bindings:
+
+`h` parent dir
+`j` up
+`k` down
+`l` child dir
+`<C-d>` page down
+`<C-u>` page up
+`G` bottom of list
+`gg` top of list
+`y` to yank
+`p` to paste
+`H` for previous dir
+`L` for to walk back up the list of recent dirs
+`/` to search local dir
+`<Esc>` or `q` to exit
+
+#### Yazi Commands
+
+`~` to lisk all commands
+`<Space>` to select
+`a` add file
+`r` to rename
+`o` for open file
+`d` to delete
+`D` to permanently delete
+`<Tab>` for file info
+`c` for copying to clipboard (additional options on screen)
+
+#### Searching
+
+`z` for zioxide (better cd navigation)
+`Z` for fzf
+`s` to search file names under dir
+`S` to search for text In files
+`f` to filter
+
+#### Tabs
+
+`t` to create a new tab
+`[1-0]` to navigate though tabs
+`<C-c>` to close tab
+
 ## NeoVim Plugin Notes
 
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
@@ -89,14 +153,14 @@ brew install --cask neovide
 
 Basic usage:
 
-- select words with Ctrl-N (like `Ctrl-d` in Sublime Text/VS Code)
+- select words with `<C-N>` (like `<C-d>` in Sublime Text/VS Code)
 - create cursors vertically with Ctrl-Down/Ctrl-Up
 - select one character at a time with Shift-Arrows
-- press n/N to get next/previous occurrence
-- press [/] to select next/previous cursor
-- press q to skip current and get next occurrence
-- press Q to remove current cursor/selection
-- start insert mode with i,a,I,A
+- press `n` / `N` to get next/previous occurrence
+- press `[` / `]` to select next/previous cursor
+- press `q` to skip current and get next occurrence
+- press `Q` to remove current cursor/selection
+- start insert mode with `i`, `a`, `I`, or `A`
 
 Two main modes:
 
