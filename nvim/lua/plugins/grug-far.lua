@@ -6,6 +6,6 @@ return {
     -- set keymaps
     local keymap = vim.keymap -- for conciseness
 
-    keymap.set("n", "<leader>f/", "", { desc = "Project find and replace" })
+    keymap.set("n", "<leader>fp", ":GrugFar<CR>", { desc = "Project find and replace" })
   end,
 }
