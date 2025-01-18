@@ -27,25 +27,33 @@ make
 
 ### Install Dependencies
 
+I have started using a payed font [MonoLisa](https://www.monolisa.dev/playground). You can either download a free trial or update the font references to your preferred font.
 Required packages:
 
 ```bash
-brew install nushell carapace atuin fzf fd bat git-delta eza ripgrep tree zoxide neovim starship
-brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf font-recursive-mono-nerd-font
+brew install atuin bat carapace eza fd fz git git-delta neovim nushell ripgrep starship tree yazi zoxide
+brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
+brew install jesseduffield/lazygit/lazygit
 brew services start atuin
 ```
 
 Nice additions:
 
 ```bash
-brew install asdf git coreutils curl libpq btop tldr yazi
-brew install jesseduffield/lazygit/lazygit
+brew install asdf btop coreutils libpq tldr
+```
+
+Other fonts I sometimes use
+
+```bash
+brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font
 ```
 
 Optional supported Terminals / GUIs
 
 ```bash
-brew install --cask wezterm ghostty
+brew install --cask ghostty
+brew install --cask wezterm
 brew install --cask neovide
 ```
 
@@ -59,25 +67,25 @@ brew install --cask neovide
 - NuShell ls can be accessed via `nuls`
 - NuShell prompt has been configured with [Starship](https://starship.rs)
 
-### bat
+### [bat](https://github.com/sharkdp/bat)
 
 - `cat` has been aliased to `bat` with better syntax highlighting
 
-### fzf
+### [fzf](https://github.com/junegunn/fzf)
 
 - `<C-t>` search files by name
 - `<C-r>` search recent commands
 
 ## NeoVim Plugin Notes
 
-### Telescope
+### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 1. `<C-d>` scrolls the preview text down
 2. `<C-u>` scrolls the preview text up
 3. `<C-v>` opens in a new vertical split
 4. `<C-t>` opens in a new tab
 
-### vim-visual-multi
+### [vim-visual-multi](https://github.com/mg979/vim-visual-multi)
 
 Basic usage:
 
