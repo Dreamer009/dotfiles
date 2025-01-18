@@ -105,7 +105,7 @@ Most vim commands work as expected (motions, r to replace characters, ~ to c
 
 And more... of course, you can enter insert mode and autocomplete will work.
 
-### mini-ai
+### [mini-ai](https://github.com/echasnovski/mini.ai)
 
 1. Mutli type edits (works better will registers such as `.`)
    1. Brackets (supports `({[`):
@@ -131,6 +131,34 @@ And more... of course, you can enter insert mode and autocomplete will work.
       3. `dana` delete around next function
       4. `dila` delete in last function
       5. `dala` delete around last function
+
+### [mini-splitjoin](https://github.com/echasnovski/mini.splitjoin)
+
+1. `gS` toggle split/join
+
+### [mini-bracketed](https://github.com/echasnovski/mini.bracketed)
+
+1. `[` + upper-suffix : go first.
+2. `[` + lower-suffix : go backward.
+3. `]` + lower-suffix : go forward.
+4. `]` + upper-suffix : go last.
+
+```
+buffer     = { suffix = 'b' },
+comment    = { suffix = 'c' },
+conflict   = { suffix = 'x' },
+diagnostic = { suffix = 'd' },
+file       = { suffix = 'f' },
+indent     = { suffix = 'i' },
+jump       = { suffix = 'j' },
+location   = { suffix = 'l' },
+oldfile    = { suffix = 'o' },
+quickfix   = { suffix = 'q' },
+treesitter = { suffix = 't' },
+undo       = { suffix = 'u' },
+window     = { suffix = 'w' },
+yank       = { suffix = 'y' },
+```
 
 ## VS Code
 
