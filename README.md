@@ -27,7 +27,8 @@ make
 
 ### Install Dependencies
 
-I have started using a payed font [MonoLisa](https://www.monolisa.dev/playground). You can either download a free trial or update the font references to your preferred font.
+I have started using a payed font: [MonoLisa](https://www.monolisa.dev/playground). You can either download a free trial or update the font references to your preferred font.
+
 Required packages:
 
 ```bash
@@ -43,13 +44,13 @@ Nice additions:
 brew install asdf btop coreutils libpq tldr
 ```
 
-Other fonts I sometimes use
+Other fonts I sometimes use:
 
 ```bash
 brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font
 ```
 
-Optional supported Terminals / GUIs
+Optional supported Terminals / GUIs:
 
 ```bash
 brew install --cask ghostty
@@ -62,14 +63,20 @@ brew install --cask neovide
 ### [NuShell](https://www.nushell.sh)
 
 - Zsh is still the default terminal, but NuShell is the default shell in Ghostty and WezTerm
-- Autocompletion is handled via: [Carapace](https://carapace.sh)
-- eza is aliased as `ls`
 - NuShell ls can be accessed via `nuls`
 - NuShell prompt has been configured with [Starship](https://starship.rs)
 
 ### [bat](https://github.com/sharkdp/bat)
 
 - `cat` has been aliased to `bat` with better syntax highlighting
+
+### [Carapace](https://carapace.sh)
+
+- Autocompletion package set in the NuShell config
+
+### [eza](https://github.com/eza-community/eza)
+
+- `eza` is aliased as `ls` adding colors and nerd-font file icons
 
 ### [fzf](https://github.com/junegunn/fzf)
 
@@ -82,7 +89,7 @@ brew install --cask neovide
 - `<Space>` to add remove file
 - `<Enter>` to stage hunks
 - `c` to commit
-- `?` for
+- `?` for help
 - `[1-5]` for quick navigation
 
 #### Vim Style Bindings:
@@ -140,7 +147,7 @@ brew install --cask neovide
 - `[1-0]` to navigate though tabs
 - `<C-c>` to close tab
 
-## [NeoVim](https://neovim.io) Plugin Notes
+## [NeoVim](https://neovim.io)
 
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
@@ -206,7 +213,7 @@ And more... of course, you can enter insert mode and autocomplete will work.
 
 ### [mini-splitjoin](https://github.com/echasnovski/mini.splitjoin)
 
-1. `gS` toggle split/join
+- `gS` toggle split/join
 
 ### [mini-bracketed](https://github.com/echasnovski/mini.bracketed)
 
