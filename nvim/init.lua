@@ -19,12 +19,11 @@ vim.keymap.set("n", "<Esc>", function()
 end, { silent = true })
 
 -- get file relative path
-vim.api.nvim_set_keymap(
-  "n",
-  "<leader>rp",
-  [[:let @+ = expand('%')<CR>]],
-  { noremap = true, silent = true, desc = "Get reative file path" }
-)
+vim.api.nvim_set_keymap("n", "<leader>rp", [[:let @+ = expand('%')<CR>]], {
+  desc = "Get reative file path",
+  noremap = true,
+  silent = true,
+})
 
 vim.opt.list = true -- Enable list mode to show special characters
 vim.opt.listchars = {
