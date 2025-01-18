@@ -140,7 +140,7 @@ brew install --cask neovide
 - `[1-0]` to navigate though tabs
 - `<C-c>` to close tab
 
-## NeoVim Plugin Notes
+## [NeoVim](https://neovim.io) Plugin Notes
 
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
