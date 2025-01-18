@@ -909,14 +909,30 @@ $env.config = {
         # cmd: "commandline edit --replace (fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}' )"
 
         # NOTE: works with zsh as the default terminal
-        cmd: "commandline edit ((commandline) + (fzf --exact --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi'))"
+        # cmd: "commandline edit ((commandline) + (fzf --exact --multi --preview='if [ -d {} ]; then eza --tree --color=always {} | head -200; else if [[ (defaults read -globalDomain AppleInterfaceStyle) == 'Dark' ]]; then bat --theme='TokyonightStorm'-n --color=always --line-range :500 {} else bat --theme='CatppuccinLatte' -n --color=always --line-range :500 {}; fi; fi'))"
+        cmd: """
+        commandline edit (
+          ( commandline ) +
+          (
+            fzf --exact --multi --preview='if [ -d {} ]; then
+              eza --tree --color=always {} | head -200;
+            else
+              if [[ $(defaults read -globalDomain AppleInterfaceStyle 2> /dev/null) == "Dark" ]]; then
+                bat --theme="TokyonightStorm" -n --color=always --line-range :500 {};
+              else
+                bat --theme="CatppuccinLatte" -n --color=always --line-range :500 {};
+              fi
+            fi'
+          )
+        )
+        """
       }
     }
   ]
 }
 
 # ----- Bat (better cat) -----
-alias cat = bat
+alias cat = bat_with_dynamic_theme
 
 # ---- Eza (better ls) -----
 alias nuls = ls
@@ -933,7 +949,18 @@ alias vi = nvim
 # NOTE: works with nushell as the default terminal
 # alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
 # NOTE: works with zsh as the default terminal
-alias fzf = fzf --exact --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else bat -n --color=always --line-range :500 {}; fi"
+# alias fzf = fzf --exact --multi --preview="if [ -d {} ]; then eza --tree --color=always {} | head -200; else $fzf_bat_with_dynamic_theme {}; fi"
+
+alias fzf = fzf --exact --multi --preview='if [ -d {} ]; then
+    eza --tree --color=always {} | head -200;
+  else
+    if [[ $(defaults read -globalDomain AppleInterfaceStyle 2> /dev/null) == "Dark" ]]; then
+      bat --theme="TokyonightStorm" -n --color=always --line-range :500 {};
+    else
+      bat --theme="CatppuccinLatte" -n --color=always --line-range :500 {};
+    fi
+  fi'
+
 
 # ---- VS Code -----
 alias code = /usr/local/bin/code

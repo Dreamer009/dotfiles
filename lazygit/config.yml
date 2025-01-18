@@ -12,31 +12,27 @@ update:
   # Period in days between update checks
   days: 1
 
-# tokyonight night
+# tokyonight night / catppuccin-latte hybrid
 gui:
   nerdFontsVersion: "3"
   theme:
     activeBorderColor:
-      - "#ff9e64"
+      - yellow
       - "bold"
     inactiveBorderColor:
-      - "#27a1b9"
+      - blue
     searchingActiveBorderColor:
-      - "#ff9e64"
+      - yellow
       - "bold"
     optionsTextColor:
-      - "#7aa2f7"
+      - blue
     selectedLineBgColor:
-      - "#283457"
+      - "#7297F1" # catppuccin-latte highlight blue
     cherryPickedCommitFgColor:
-      - "#7aa2f7"
-    cherryPickedCommitBgColor:
-      - "#bb9af7"
+      - blue
     markedBaseCommitFgColor:
-      - "#7aa2f7"
+      - blue
     markedBaseCommitBgColor:
-      - "#e0af68"
+      - yellow
     unstagedChangesColor:
-      - "#db4b4b"
-    defaultFgColor:
-      - "#c0caf5"
+      - red

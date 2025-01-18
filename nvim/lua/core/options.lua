@@ -47,3 +47,9 @@ opt.swapfile = false
 
 -- nushell
 opt.shell = "/opt/homebrew/bin/nu"
+
+opt.list = true -- Enable list mode to show special characters
+opt.listchars = {
+  tab = " ", -- Display tabs as "▸ " (customize as needed)
+  trail = "", -- Display trailing spaces as "•"
+}

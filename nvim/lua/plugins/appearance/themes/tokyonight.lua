@@ -6,9 +6,6 @@ return {
       require("tokyonight").setup({
         style = "night",
       })
-
-      -- load the colorscheme here
-      vim.cmd([[colorscheme tokyonight]])
     end,
   },
 }

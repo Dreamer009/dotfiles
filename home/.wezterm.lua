@@ -66,51 +66,101 @@ config.window_decorations = "RESIZE"
 -- config.window_background_opacity = 0.8
 -- config.macos_window_background_blur = 10
 
--- -----------------------------------------------------------------------------
--- TokyoNight WezTerm Colors
--- Theme: Tokyo Night Night
--- Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_storm.toml
--- -----------------------------------------------------------------------------
+local function scheme_for_appearance(appearance)
+  if appearance:find("Dark") then
+    -- -----------------------------------------------------------------------------
+    -- TokyoNight WezTerm Colors
+    -- Theme: Tokyo Night Night
+    -- Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_storm.toml
+    -- -----------------------------------------------------------------------------
+    return {
+      foreground = "#c0caf5",
+      background = "#1a1b26",
+      cursor_bg = "#c0caf5",
+      cursor_border = "#c0caf5",
+      cursor_fg = "#1a1b26",
+      selection_bg = "#283457",
+      selection_fg = "#c0caf5",
+      split = "#7aa2f7",
+      compose_cursor = "#ff9e64",
+      scrollbar_thumb = "#292e42",
+      ansi = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" },
+      brights = { "#414868", "#ff899d", "#9fe044", "#faba4a", "#8db0ff", "#c7a9ff", "#a4daff", "#c0caf5" },
+      tab_bar = {
+        inactive_tab_edge = "#16161e",
+        background = "#1a1b26",
+        active_tab = {
+          fg_color = "#16161e",
+          bg_color = "#7aa2f7",
+        },
+        inactive_tab = {
+          fg_color = "#545c7e",
+          bg_color = "#292e42",
+        },
+        inactive_tab_hover = {
+          fg_color = "#7aa2f7",
+          bg_color = "#292e42",
+        },
+        new_tab_hover = {
+          fg_color = "#7aa2f7",
+          bg_color = "#1a1b26",
+          intensity = "Bold",
+        },
+        new_tab = {
+          fg_color = "#7aa2f7",
+          bg_color = "#1a1b26",
+        },
+      },
+    }
+  else
+    -- -----------------------------------------------------------------------------
+    -- Catppuccin WezTerm Colors
+    -- Theme: Catppuccin Latte
+    -- Upstream: https://github.com/catppuccin/wezterm/blob/main/dist/catppuccin-latte.toml
+    -- -----------------------------------------------------------------------------
+    return {
+      foreground = "#4c4f69",
+      background = "#eff1f5",
+      ansi = { "#bcc0cc", "#d20f39", "#40a02b", "#df8e1d", "#1e66f5", "#ea76cb", "#179299", "#5c5f77" },
+      brights = { "#acb0be", "#d20f39", "#40a02b", "#df8e1d", "#1e66f5", "#ea76cb", "#179299", "#6c6f85" },
+      compose_cursor = "#dd7878",
+      cursor_bg = "#dc8a78",
+      cursor_border = "#dc8a78",
+      cursor_fg = "#dce0e8",
+      scrollbar_thumb = "#acb0be",
+      selection_bg = "#acb0be",
+      selection_fg = "#4c4f69",
+      split = "#9ca0b0",
+      visual_bell = "#ccd0da",
+      tab_bar = {
+        background = "#dce0e8",
+        inactive_tab_edge = "#ccd0da",
+        active_tab = {
+          bg_color = "#8839ef",
+          fg_color = "#dce0e8",
+        },
+        inactive_tab = {
+          bg_color = "#bcc0cc",
+          fg_color = "#4c4f69",
+        },
+        inactive_tab_hover = {
+          bg_color = "#eff1f5",
+          fg_color = "#4c4f69",
+        },
+        new_tab = {
+          bg_color = "#acb0be",
+          fg_color = "#4c4f69",
+        },
+        new_tab_hover = {
+          bg_color = "#8839ef",
+          fg_color = "#dce0e8",
+        },
+      },
+    }
+  end
+end
 
-config.colors = {
-  foreground = "#c0caf5",
-  background = "#1a1b26",
-  cursor_bg = "#c0caf5",
-  cursor_border = "#c0caf5",
-  cursor_fg = "#1a1b26",
-  selection_bg = "#283457",
-  selection_fg = "#c0caf5",
-  split = "#7aa2f7",
-  compose_cursor = "#ff9e64",
-  scrollbar_thumb = "#292e42",
-  ansi = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" },
-  brights = { "#414868", "#ff899d", "#9fe044", "#faba4a", "#8db0ff", "#c7a9ff", "#a4daff", "#c0caf5" },
-  tab_bar = {
-    inactive_tab_edge = "#16161e",
-    background = "#1a1b26",
-    active_tab = {
-      fg_color = "#16161e",
-      bg_color = "#7aa2f7",
-    },
-    inactive_tab = {
-      fg_color = "#545c7e",
-      bg_color = "#292e42",
-    },
-    inactive_tab_hover = {
-      fg_color = "#7aa2f7",
-      bg_color = "#292e42",
-    },
-    new_tab_hover = {
-      fg_color = "#7aa2f7",
-      bg_color = "#1a1b26",
-      intensity = "Bold",
-    },
-    new_tab = {
-      fg_color = "#7aa2f7",
-      bg_color = "#1a1b26",
-    },
-  },
-}
+config.colors = scheme_for_appearance(wezterm.gui.get_appearance())
 
 -- and finally, return the configuration to wezterm
 return config
