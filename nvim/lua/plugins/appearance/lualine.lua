@@ -26,9 +26,6 @@ return {
 
     -- configure lualine with modified theme
     lualine.setup({
-      options = {
-        theme = "tokyonight-storm",
-      },
       sections = {
         -- override git icon in section b
         lualine_b = {
@@ -53,8 +50,8 @@ return {
         },
         lualine_c = {
           {
-            require("noice").api.status.message.get_hl,
-            cond = require("noice").api.status.message.has,
+            noice.api.status.message.get_hl,
+            cond = noice.api.status.message.has,
           },
           {
             "filename",

@@ -1,6 +1,6 @@
 [flavor]
 dark = "tokyo-night"
-light = "tokyo-night"
+light = "catppuccin-latte"
 
 [icon]
 prepend_exts = [

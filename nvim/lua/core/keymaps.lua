@@ -53,3 +53,25 @@ keymap.set("n", "<leader>cp", '<cmd>let @+ = expand("%:p")<CR>', { desc = "Copy 
 
 -- Exit quickly (and remember state)
 keymap.set("n", "<leader>q", ":wqa<CR>", { desc = "Save and quit" }) -- split window vertically
+
+-- Get file relative path
+keymap.set("n", "<leader>rp", [[:let @+ = expand('%')<CR>]], {
+  desc = "Get reative file path",
+  noremap = true,
+  silent = true,
+})
+
+-- disable highlighted search by hitting escape
+keymap.set("n", "<Esc>", function()
+  if vim.v.hlsearch == 1 then
+    vim.cmd("noh")
+  else
+    vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<Esc>", true, false, true), "n", false)
+  end
+end, { silent = true })
+
+-- Neovide
+if vim.g.neovide then
+  vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
+  vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
+end

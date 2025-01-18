@@ -137,12 +137,20 @@ _fzf_compgen_dir() {
 
 source ~/fzf-git.sh/fzf-git.sh
 
+bat_with_dynamic_theme() {
+  # Determine the bat theme based on the interface style
+  if [[ $(defaults read -globalDomain AppleInterfaceStyle 2> /dev/null) == "Dark" ]]; then
+    bat --theme="TokyonightStorm" "$@"
+  else
+    bat --theme="CatppuccinLatte" "$@"
+  fi
+}
+
 alias v="vim"
 alias vi="nvim"
 
 # ----- Bat (better cat) -----
-export BAT_THEME=TokyonightNight
-alias cat="bat"
+alias cat="bat_with_dynamic_theme"
 
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"

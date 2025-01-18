@@ -42,6 +42,24 @@ def nufzf [] {
   | from json
 }
 
+def apple_theme [] {
+  if (defaults read -g AppleInterfaceStyle err> /dev/null | str downcase) == "dark" {
+    "dark"
+  } else {
+    "light"
+  }
+}
+
+def bat_with_dynamic_theme [
+  $file
+] {
+  if (apple_theme) == "dark" {
+    bat --theme="TokyonightStorm" $file
+  } else {
+    bat --theme="CatppuccinLatte" $file
+  }
+}
+
 # Use nushell functions to define your right and left prompt
 $env.PROMPT_COMMAND = {|| create_left_prompt }
 # FIXME: This default is not implemented in rust code as of 2023-09-08.
@@ -125,26 +143,19 @@ $env.FZF_DEFAULT_OPTS = '
   --ansi
   --layout=reverse
   --border=none
-  --color=bg+:#283457
-  --color=bg:#16161e
-  --color=border:#27a1b9
-  --color=fg:#c0caf5
-  --color=gutter:#16161e
-  --color=header:#ff9e64
-  --color=hl+:#2ac3de
-  --color=hl:#2ac3de
-  --color=info:#545c7e
-  --color=marker:#ff007c
-  --color=pointer:#ff007c
-  --color=prompt:#2ac3de
-  --color=query:#c0caf5:regular
-  --color=scrollbar:#27a1b9
-  --color=separator:#ff9e64
-  --color=spinner:#ff007c
+  --color=bg+:#7297F1
+  --color=fg:#7297F1
+  --color=border:blue
+  --color=header:blue
+  --color=hl+:blue
+  --color=hl:blue
+  --color=marker:red
+  --color=pointer:red
+  --color=prompt:blue
+  --color=scrollbar:blue
+  --color=separator:blue
+  --color=spinner:red
 '
-
-# ----- Bat (better cat) -----
-$env.BAT_THEME = 'TokyonightStorm'
 
 $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 $env.STARSHIP_CONFIG = '/Users/benjaminsullivan/.config/starship.toml'
