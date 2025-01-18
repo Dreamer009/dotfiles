@@ -78,76 +78,76 @@ brew install --cask neovide
 
 ### [LazyGit](https://github.com/jesseduffield/lazygit)
 
-`lazygit` or `lg` to launch
-`<Space>` to add remove file
-`<Enter>` to stage hunks
-`c` to commit
-`?` for
-`[1-5]` for quick navigation
+- `lazygit` or `lg` to launch
+- `<Space>` to add remove file
+- `<Enter>` to stage hunks
+- `c` to commit
+- `?` for
+- `[1-5]` for quick navigation
 
 #### Vim Style Bindings:
 
-`h` quick navigation up
-`j` up
-`k` down
-`l` quick navigation down
-`q` to quit
+- `h` quick navigation up
+- `j` up
+- `k` down
+- `l` quick navigation down
+- `q` to quit
 
 ### [Yazi](https://yazi-rs.github.io/docs/installation) file manager
 
-`yazi` or `y` to launch
+- `yazi` or `y` to launch
 
 #### Vim Style Bindings:
 
-`h` parent dir
-`j` up
-`k` down
-`l` child dir
-`<C-d>` page down
-`<C-u>` page up
-`G` bottom of list
-`gg` top of list
-`y` to yank
-`p` to paste
-`H` for previous dir
-`L` for to walk back up the list of recent dirs
-`/` to search local dir
-`<Esc>` or `q` to exit
+- `h` parent dir
+- `j` up
+- `k` down
+- `l` child dir
+- `<C-d>` page down
+- `<C-u>` page up
+- `G` bottom of list
+- `gg` top of list
+- `y` to yank
+- `p` to paste
+- `H` for previous dir
+- `L` for to walk back up the list of recent dirs
+- `/` to search local dir
+- `<Esc>` or `q` to exit
 
 #### Yazi Commands
 
-`~` to lisk all commands
-`<Space>` to select
-`a` add file
-`r` to rename
-`o` for open file
-`d` to delete
-`D` to permanently delete
-`<Tab>` for file info
-`c` for copying to clipboard (additional options on screen)
+- `~` to lisk all commands
+- `<Space>` to select
+- `a` add file
+- `r` to rename
+- `o` for open file
+- `d` to delete
+- `D` to permanently delete
+- `<Tab>` for file info
+- `c` for copying to clipboard (additional options on screen)
 
 #### Searching
 
-`z` for zioxide (better cd navigation)
-`Z` for fzf
-`s` to search file names under dir
-`S` to search for text In files
-`f` to filter
+- `z` for zioxide (better cd navigation)
+- `Z` for fzf
+- `s` to search file names under dir
+- `S` to search for text In files
+- `f` to filter
 
 #### Tabs
 
-`t` to create a new tab
-`[1-0]` to navigate though tabs
-`<C-c>` to close tab
+- `t` to create a new tab
+- `[1-0]` to navigate though tabs
+- `<C-c>` to close tab
 
 ## NeoVim Plugin Notes
 
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
-1. `<C-d>` scrolls the preview text down
-2. `<C-u>` scrolls the preview text up
-3. `<C-v>` opens in a new vertical split
-4. `<C-t>` opens in a new tab
+- `<C-d>` scrolls the preview text down
+- `<C-u>` scrolls the preview text up
+- `<C-v>` opens in a new vertical split
+- `<C-t>` opens in a new tab
 
 ### [vim-visual-multi](https://github.com/mg979/vim-visual-multi)
 
@@ -210,10 +210,10 @@ And more... of course, you can enter insert mode and autocomplete will work.
 
 ### [mini-bracketed](https://github.com/echasnovski/mini.bracketed)
 
-1. `[` + upper-suffix : go first.
-2. `[` + lower-suffix : go backward.
-3. `]` + lower-suffix : go forward.
-4. `]` + upper-suffix : go last.
+- `[` + upper-suffix : go first.
+- `[` + lower-suffix : go backward.
+- `]` + lower-suffix : go forward.
+- `]` + upper-suffix : go last.
 
 ```
 buffer     = { suffix = 'b' },
