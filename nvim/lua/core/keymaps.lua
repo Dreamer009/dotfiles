@@ -42,6 +42,7 @@ keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer
 
 -- Keep window centered when going up/down
 keymap.set("n", "J", "mzJ`z")
+keymap.set("n", "G", "Gzz")
 keymap.set("n", "<C-d>", "<C-d>zz")
 keymap.set("n", "<C-u>", "<C-u>zz")
 keymap.set("n", "n", "nzzzv")
