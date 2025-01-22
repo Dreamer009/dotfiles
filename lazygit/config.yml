@@ -1,17 +1,14 @@
----
 promptToReturnFromSubprocess: false
-
 keybinding:
   universal:
     edit: "o" # Change the edit action to 'o'
-
+  files:
+    commitChangesWithEditor: <disabled>
 update:
   # One of: 'prompt' (default) | 'background' | 'never'
   method: prompt
-
   # Period in days between update checks
   days: 1
-
 # tokyonight night / catppuccin-latte hybrid
 gui:
   nerdFontsVersion: "3"
