@@ -67,6 +67,12 @@ return {
           cterm_color = "52",
           name = "Rb",
         },
+        ["toml"] = {
+          icon = "",
+          color = colors.red,
+          cterm_color = "52",
+          name = "Toml",
+        },
       },
     })
   end,

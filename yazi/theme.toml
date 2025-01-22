@@ -8,6 +8,7 @@ prepend_exts = [
   { name = "gemspec", text = "", fg = "#f7768e" },
   { name = "rake", text = "", fg = "#f7768e" },
   { name = "rb", text = "", fg = "#f7768e" },
+  { name = "toml", text = "", fg = "#f7768e" },
 ]
 
 prepend_files = [
