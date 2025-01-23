@@ -936,7 +936,7 @@ alias cat = bat_with_dynamic_theme
 
 # ---- Eza (better ls) -----
 alias nuls = ls
-alias ls = eza -a --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions --ignore-glob=".DS_Store"
+alias ls = eza -a --color=always --git --icons=always --ignore-glob=".DS_Store"
 
 # ---- LazyGit -----
 alias lg = lazygit
