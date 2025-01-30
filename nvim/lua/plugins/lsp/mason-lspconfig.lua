@@ -12,6 +12,7 @@ return {
         "lua_ls",
         "pylsp",
         "ruby_lsp",
+        "solargraph",
         "sqlls",
         "tailwindcss",
         "ts_ls",
