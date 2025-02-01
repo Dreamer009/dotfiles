@@ -16,8 +16,8 @@ defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 
 ### Mac Dev Applications
 
-[Postgresql App](https://postgresapp.com/downloads.html) (needed to enable `psql` from the cmdline)
-[Postman](https://www.postman.com/downloads/)
+1. [Postgresql App](https://postgresapp.com/downloads.html) (needed to enable `psql` from the cmdline)
+2. [Postman](https://www.postman.com/downloads/)
 
 ## Setup
 
