@@ -123,6 +123,7 @@ use std "path add"
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
 path add /opt/homebrew/bin
+path add /Applications/Postgres.app/Contents/Versions/latest/bin
 
 # NeoVim
 $env.EDITOR = "nvim"
