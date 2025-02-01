@@ -12,6 +12,10 @@ local keymap = vim.keymap -- for conciseness
 ---------------------
 -- General Keymaps -------------------
 
+-- disable a few default NeoVim commands
+keymap.set("i", "<C-d>", "<Nop>", { noremap = true, silent = true })
+keymap.set("i", "<C-t>", "<Nop>", { noremap = true, silent = true })
+
 -- copy and paste
 keymap.set("n", "<D-c>", '"+p', { noremap = true, silent = true })
 keymap.set("i", "<D-c>", '<C-o>"+p', { noremap = true, silent = true })
