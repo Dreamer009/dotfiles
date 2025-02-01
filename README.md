@@ -4,15 +4,20 @@
 
 Repeat key strokes
 
-```
+```bash
 defaults write -g ApplePressAndHoldEnabled -bool false
 ```
 
 Finder application set column view to default
 
-```
+```bash
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 ```
+
+### Mac Dev Applications
+
+[Postgresql App](https://postgresapp.com/downloads.html) (needed to enable `psql` from the cmdline)
+[Postman](https://www.postman.com/downloads/)
 
 ## Setup
 
@@ -222,7 +227,7 @@ And more... of course, you can enter insert mode and autocomplete will work.
 - `]` + lower-suffix : go forward.
 - `]` + upper-suffix : go last.
 
-```
+```lua
 buffer     = { suffix = 'b' },
 comment    = { suffix = 'c' },
 conflict   = { suffix = 'x' },
@@ -239,23 +244,70 @@ window     = { suffix = 'w' },
 yank       = { suffix = 'y' },
 ```
 
+### Colorscheme
+
+The following are configured to use [Tokyonight](https://github.com/folke/tokyonight.nvim) in dark mode and [Catppuccin Latte](https://github.com/catppuccin/catppuccin) in light mode. Note: btop can not transition automatically and is only configured for dark mode.
+
+- [x] Ghostty
+- [x] LazyGit
+- [x] NeoVim
+- [x] NeoVim bufferline plugin
+- [x] NeoVim lualine plugin
+- [x] Wezterm
+- [x] Yazi
+- [x] bat
+- [ ] btop
+- [x] delta
+- [x] fd
+- [x] fzf
+
+## ASDF Version Manager
+
+Install language plugins
+
+```bash
+asdf plugin add elixir
+asdf plugin add nodejs
+asdf plugin add ruby
+```
+
+Install the latest versions
+
+```bash
+asdf install elixir latest
+asdf install nodejs latest
+asdf install ruby latest
+```
+
+Check for new plugin versions
+
+```bash
+asdf plugin update --all
+```
+
+## NeoVim RubyLSP Plugins
+
+```bash
+gem install bundler ruby-lsp rubocop erb_lint erb-formatter
+```
+
 ## VS Code
 
 Install the cmdline tools
 
-```
+```bash
 code --install-extension ms-vscode.cpptools
 ```
 
 List current extensions
 
-```
+```bash
 code --list-extensions
 ```
 
 Install extensions
 
-```
+```bash
 code --install-extension bradlc.vscode-tailwindcss
 code --install-extension dbaeumer.vscode-eslint
 code --install-extension deerawan.vscode-dash
