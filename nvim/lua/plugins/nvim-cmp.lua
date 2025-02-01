@@ -2,9 +2,6 @@ return {
   "hrsh7th/nvim-cmp",
   event = "InsertEnter",
   dependencies = {
-    "tailwind-tools", -- "luckasRanarison/tailwind-tools.nvim" tailwindcss autocomplete previews colors
-    "hrsh7th/cmp-buffer", -- source for text in buffer
-    "hrsh7th/cmp-path", -- source for file system paths
     {
       "L3MON4D3/LuaSnip",
       -- follow latest release.
@@ -12,9 +9,12 @@ return {
       -- install jsregexp (optional!).
       build = "make install_jsregexp",
     },
-    "saadparwaiz1/cmp_luasnip", -- for autocompletion
-    "rafamadriz/friendly-snippets", -- useful snippets
+    "hrsh7th/cmp-buffer", -- source for text in buffer
+    "hrsh7th/cmp-path", -- source for file system paths
     "onsails/lspkind.nvim", -- vs-code like pictograms
+    "rafamadriz/friendly-snippets", -- useful snippets
+    "saadparwaiz1/cmp_luasnip", -- for autocompletion
+    "tailwind-tools", -- "luckasRanarison/tailwind-tools.nvim" tailwindcss autocomplete previews colors
   },
   config = function()
     local cmp = require("cmp")
