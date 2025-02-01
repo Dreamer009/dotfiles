@@ -34,8 +34,8 @@ return {
       pattern = "*.erb",
       callback = function()
         local file = vim.fn.expand("%:p") -- Get the full file path
-        -- Run erb_lint autocorrect
-        vim.fn.system({ "erb_lint", "--autocorrect", file })
+        -- Run erb-formatter autocorrect
+        vim.fn.system({ "erb-formatter", "--write", file })
 
         -- Force reload the file
         vim.cmd("edit!")

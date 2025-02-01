@@ -6,11 +6,12 @@ return {
       ensure_installed = {
         "black", -- python formatter
         "erb-lint", -- erb linter
+        "erb-formatter", -- erb formatter
         "eslint_d", -- js linter
         "isort", -- python formatter
         "prettier", -- prettier formatter
         "pylint", -- python linter
-        "rubocop", -- ruby linter
+        "rubocop", -- ruby linter and formatter
         "stylua", -- lua formatter
       },
       auto_update = true, -- Automatically update tools
