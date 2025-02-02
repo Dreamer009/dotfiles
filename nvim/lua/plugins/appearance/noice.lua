@@ -10,32 +10,12 @@ return {
     -- "rcarriga/nvim-notify",
   },
   config = function()
-    require("telescope").load_extension("noice")
-
     require("noice").setup({
       views = {
         mini = {
           align = "message-left",
           position = {
             row = 1,
-          },
-          timeout = 5000,
-        },
-      },
-      -- Disable command-line messages (like `:w`, `:q`, etc.)
-      messages = {
-        enabled = true, -- enables the Noice messages UI
-        view = "mini", -- default view for messages
-        view_error = "mini", -- view for errors
-        view_warn = "mini", -- view for warnings
-        view_history = "messages", -- view for :messages
-        view_search = "virtualtext", -- view for search count messages. Set to `false` to disable
-      },
-      history = {
-        filter = {
-          ["not"] = {
-            cmdline = false,
-            event = "msg_show",
           },
         },
       },
