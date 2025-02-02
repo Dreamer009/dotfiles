@@ -154,6 +154,14 @@ brew install --cask neovide
 
 ## [NeoVim](https://neovim.io)
 
+### [copilot](https://github.com/github/copilot.vim)
+
+To initialize and authenticate copilot:
+
+```bash
+:Copilot setup
+```
+
 ### [telescope](https://github.com/nvim-telescope/telescope.nvim)
 
 - `<C-d>` scrolls the preview text down
