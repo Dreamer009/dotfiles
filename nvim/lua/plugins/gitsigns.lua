@@ -38,17 +38,8 @@ return {
 
         map("n", "<leader>ghu", gs.undo_stage_hunk, "Undo stage hunk")
 
-        map("n", "<leader>gb", function()
-          gs.blame_line({ full = true })
-        end, "Blame line")
-        map("n", "<leader>gB", gs.toggle_current_line_blame, "Toggle line blame")
-
         -- Diff
         map("n", "<leader>gd", gs.preview_hunk, "Diff preview hunk")
-        map("n", "<leader>gfd", gs.diffthis, "Diff this")
-        map("n", "<leader>gfD", function()
-          gs.diffthis("~")
-        end, "Diff this ~")
 
         -- Text object
         map({ "o", "x" }, "ih", ":<C-U>Gitsigns select_hunk<CR>", "Gitsigns select hunk")

@@ -50,16 +50,6 @@ return {
           },
           "diagnostics",
         },
-        lualine_c = {
-          {
-            noice.api.status.message.get_hl,
-            cond = noice.api.status.message.has,
-          },
-          {
-            "filename",
-            path = 1,
-          },
-        },
         -- add Lazy status indicator
         lualine_x = {
           {

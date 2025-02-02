@@ -162,12 +162,11 @@ To initialize and authenticate copilot:
 :Copilot setup
 ```
 
-### [telescope](https://github.com/nvim-telescope/telescope.nvim)
+### [Snacks.picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
 
-- `<C-d>` scrolls the preview text down
-- `<C-u>` scrolls the preview text up
+- `J` scrolls the preview text down
+- `K` scrolls the preview text up
 - `<C-v>` opens in a new vertical split
-- `<C-t>` opens in a new tab
 
 ### [vim-visual-multi](https://github.com/mg979/vim-visual-multi)
 
