@@ -972,5 +972,6 @@ source ./env.nu
 source ~/.config/atuin/init.nu
 source ~/.cache/carapace/init.nu
 source ~/.zoxide.nu
-source /opt/homebrew/opt/asdf/libexec/asdf.nu
+source /opt/homebrew/opt/asdf/bin
+
 use ~/.cache/starship/init.nu
