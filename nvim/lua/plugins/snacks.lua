@@ -41,7 +41,7 @@ return {
     {
       "<leader>ff",
       function()
-        Snacks.picker.files()
+        Snacks.picker.files({ hidden = true })
       end,
       desc = "Find files",
     },
@@ -55,21 +55,21 @@ return {
     {
       "<leader>fr",
       function()
-        Snacks.picker.recent()
+        Snacks.picker.recent({ hidden = true })
       end,
       desc = "Find recent",
     },
     {
       "<leader>fs",
       function()
-        Snacks.picker.grep()
+        Snacks.picker.grep({ hidden = true })
       end,
       desc = "Find string",
     },
     {
       "<leader>ft",
       function()
-        Snacks.picker.todo_comments()
+        Snacks.picker.todo_comments({ hidden = true })
       end,
       desc = "Find todo",
     },
