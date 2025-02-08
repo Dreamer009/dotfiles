@@ -1,5 +1,9 @@
 [manager]
 prepend_keymap = [
+  # Hopping
+  { on = "<C-k>", run = "arrow -1", desc = "Move cursor up" },
+  { on = "<C-j>", run = "arrow 1",  desc = "Move cursor down" },
+
   # Operation
   { on = "d", run = "remove --permanently", desc = "Permanently delete selected files" },
 ]
