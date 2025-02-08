@@ -7,6 +7,13 @@ $env.config = {
   show_banner: false # true or false to enable or disable the welcome banner at startup
 
   keybindings: [
+     {
+      name: quit_shell
+      modifier: control
+      keycode: char_d
+      mode: [emacs, vi_normal, vi_insert]
+      event: null
+    },
     {
       name: fuzzy_file
       modifier: control
