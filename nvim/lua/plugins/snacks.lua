@@ -75,11 +75,6 @@ return {
     },
   },
   opts = {
-    integrations = {
-      lazygit = {
-        open_in_current_buffer = true, -- Ensures LazyGit opens files in the same buffer
-      },
-    },
     -- your configuration comes here
     -- or leave it empty to use the default settings
     -- refer to the configuration section below
@@ -93,7 +88,17 @@ return {
         { section = "startup" },
       },
     },
-    lazygit = { enabled = true },
+    lazygit = {
+      enabled = true,
+      config = {
+        os = {
+          edit = '[ -z "$NVIM" ] && (nvim -- {{filename}}) || (nvim --server "$NVIM" --remote-send "q" && nvim --server "$NVIM" --remote {{filename}})',
+          editAtLine = '[ -z "$NVIM" ] && (nvim +{{line}} -- {{filename}}) || (nvim --server "$NVIM" --remote-send "q" &&  nvim --server "$NVIM" --remote {{filename}} && nvim --server "$NVIM" --remote-send ":{{line}}<CR>")',
+          editAtLineAndWait = "nvim +{{line}} {{filename}}",
+          openDirInEditor = '[ -z "$NVIM" ] && (nvim -- {{dir}}) || (nvim --server "$NVIM" --remote-send "q" && nvim --server "$NVIM" --remote {{dir}})',
+        },
+      },
+    },
     input = { enabled = true },
     notifier = { enabled = true },
     picker = {
