@@ -4,19 +4,11 @@ return {
   lazy = false,
   ---@type snacks.Config
   keys = {
+    -- Snacks.lazygit
     {
       "<leader>gb",
       function()
         Snacks.git.blame_line()
-      end,
-      desc = "LazyGit",
-    },
-
-    -- Snacks.lazygit
-    {
-      "<leader>lg",
-      function()
-        Snacks.lazygit()
       end,
       desc = "LazyGit",
     },
@@ -26,6 +18,29 @@ return {
         Snacks.lazygit.log_file()
       end,
       desc = "LazyGit Log File",
+    },
+    {
+      "<leader>lg",
+      function()
+        Snacks.lazygit()
+      end,
+      desc = "LazyGit",
+    },
+
+    -- Snacks.explorer
+    {
+      "<leader>e",
+      function()
+        Snacks.explorer.open({ hidden = true })
+      end,
+      desc = "Open Snacks.explorer",
+    },
+    {
+      "<C-k><C-b>",
+      function()
+        Snacks.explorer.open({ hidden = true })
+      end,
+      desc = "Open Snacks.explorer",
     },
 
     -- Snacks.notifier
@@ -88,6 +103,7 @@ return {
         { section = "startup" },
       },
     },
+    explorer = { enabled = true },
     lazygit = {
       enabled = true,
       config = {
@@ -120,6 +136,7 @@ return {
             -- to close the picker on ESC instead of going to normal mode,
             -- add the following keymap to your config
             ["<Esc>"] = { "close", mode = { "n", "i" } },
+
             -- I'm used to scrolling like this in LazyGit
             ["J"] = { "preview_scroll_down", mode = { "i", "n" } },
             ["K"] = { "preview_scroll_up", mode = { "i", "n" } },
