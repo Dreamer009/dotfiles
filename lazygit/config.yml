@@ -9,6 +9,8 @@ update:
   method: prompt
   # Period in days between update checks
   days: 1
+git:
+  autoForwardBranches: none
 # tokyonight night / catppuccin-latte hybrid
 gui:
   nerdFontsVersion: "3"

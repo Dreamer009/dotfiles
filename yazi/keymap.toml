@@ -1,4 +1,4 @@
-[manager]
+[mgr]
 prepend_keymap = [
   # Hopping
   { on = "<C-k>", run = "arrow -1", desc = "Move cursor up" },
