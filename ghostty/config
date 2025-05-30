@@ -35,7 +35,7 @@ font-feature = ss18
 # Maple Mono Italics
 # font-family-italic = "Maple Mono NF"
 # # only needed when pairing with MonoLisa
-# # font-style-italic = "BoldItalic"
+# font-style-italic = "Bold Italic"
 # font-family-bold-italic = "Maple Mono NF"
 # # Classic '@', '$', '%', '&', 'Q', '=>', '->'
 # font-feature = cv01

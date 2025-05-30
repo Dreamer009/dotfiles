@@ -20,10 +20,10 @@ config.scrollback_lines = 10000
 
 -- Font
 config.font_size = 13
-config.font = wezterm.font({
-  family = "JetBrainsMono Nerd Font Mono",
-  harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
-})
+-- config.font = wezterm.font({
+--   family = "JetBrainsMono Nerd Font Mono",
+--   harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
+-- })
 -- config.font = wezterm.font({
 --   family = "0xProto Nerd Font Mono",
 -- })
@@ -42,17 +42,19 @@ config.font = wezterm.font({
 --   harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05" },
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
--- config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01" } })
-config.font_rules = {
-  {
-    italic = true,
-    font = wezterm.font({
-      family = "Maple Mono NF",
-      harfbuzz_features = { "cv01" },
-      italic = true,
-    }),
-  },
-}
+
+config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
+
+-- config.font_rules = {
+--   {
+--     italic = true,
+--     font = wezterm.font({
+--       family = "Maple Mono NF",
+--       harfbuzz_features = { "cv01" },
+--       italic = true,
+--     }),
+--   },
+-- }
 
 config.window_padding = {
   left = 0,
