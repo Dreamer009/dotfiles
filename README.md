@@ -295,7 +295,7 @@ asdf plugin update --all
 ## NeoVim RubyLSP Plugins
 
 ```bash
-gem install bundler ruby-lsp rubocop erb_lint erb-formatter
+gem install bundler ruby-lsp rubocop erb_lint erb-formatter yard
 ```
 
 ## VS Code
