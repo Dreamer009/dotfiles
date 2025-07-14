@@ -60,7 +60,7 @@ Optional supported Terminals / GUIs:
 ```bash
 brew install --cask ghostty
 brew install --cask wezterm
-brew install --cask neovide
+brew install --cask neovide-app
 ```
 
 ## Command Line Notes
