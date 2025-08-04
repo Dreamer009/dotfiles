@@ -46,7 +46,7 @@ brew services start atuin
 Nice additions:
 
 ```bash
-brew install asdf btop coreutils libpq tldr
+brew install ack asdf btop coreutils libpq tldr
 ```
 
 Other fonts I sometimes use:
