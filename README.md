@@ -196,7 +196,7 @@ Most vim commands work as expected (motions, r to replace characters, ~ to c
 
 And more... of course, you can enter insert mode and autocomplete will work.
 
-### [mini-ai](https://github.com/echasnovski/mini.ai)
+### [mini-ai](https://github.com/nvim-mini/mini.ai)
 
 1. Mutli type edits (works better will registers such as `.`)
    1. Brackets (supports `({[`):
@@ -223,11 +223,11 @@ And more... of course, you can enter insert mode and autocomplete will work.
       4. `dila` delete in last function
       5. `dala` delete around last function
 
-### [mini-splitjoin](https://github.com/echasnovski/mini.splitjoin)
+### [mini-splitjoin](https://github.com/nvim-mini/mini.splitjoin)
 
 - `gS` toggle split/join
 
-### [mini-bracketed](https://github.com/echasnovski/mini.bracketed)
+### [mini-bracketed](https://github.com/nvim-mini/mini.bracketed)
 
 - `[` + upper-suffix : go first.
 - `[` + lower-suffix : go backward.
