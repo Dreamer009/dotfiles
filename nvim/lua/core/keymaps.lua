@@ -56,8 +56,17 @@ keymap.set("n", "N", "Nzzzv")
 keymap.set("n", "<leader>cf", '<cmd>let @+ = expand("%")<CR>', { desc = "Copy File Name" })
 keymap.set("n", "<leader>cp", '<cmd>let @+ = expand("%:p")<CR>', { desc = "Copy File Path" })
 
--- Exit quickly (and remember state)
-keymap.set("n", "<leader>q", ":wqa<CR>", { desc = "Save and quit" }) -- split window vertically
+-- close terminals, exit quickly, and remember state
+vim.keymap.set("n", "<leader>q", function()
+  -- loop over all buffers and close terminal ones
+  for _, buf in ipairs(vim.api.nvim_list_bufs()) do
+    if vim.api.nvim_buf_is_loaded(buf) and vim.bo[buf].buftype == "terminal" then
+      -- this sends SIGHUP to kill job + wipe buffer
+      vim.api.nvim_buf_delete(buf, { force = true })
+    end
+  end
+  vim.cmd("wqa")
+end, { desc = "Save and quit (kill terminals first)" })
 
 -- Get file relative path
 keymap.set("n", "<leader>rp", [[:let @+ = expand('%')<CR>]], {
