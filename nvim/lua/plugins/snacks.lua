@@ -165,7 +165,16 @@ return {
         },
       },
       quickfile = { enabled = true },
-      terminal = { enabled = true },
+      terminal = {
+        enabled = true,
+        -- Uncomment for floating style
+        -- win = {
+        --   style = "float", -- force floating terminal
+        --   border = "rounded", -- other options: "single", "double", "solid", "shadow", etc.
+        --   width = 0.9, -- 90% of the editor width
+        --   height = 0.9, -- 80% of the editor height
+        -- },
+      },
       win = {
         keys = {
           q = "close",
