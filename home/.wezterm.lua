@@ -31,10 +31,19 @@ config.font_size = 13
 --   family = "Lilex Nerd Font Mono",
 --   harfbuzz_features = { "zero", "cv08" },
 -- })
--- config.font = wezterm.font({
---   family = "MonoLisa Default",
---   harfbuzz_features = { "zero", "ss03", "ss07", "ss09", "ss17", "ss18" },
--- })
+
+config.font = wezterm.font_with_fallback({
+  {
+    family = "MonoLisa Default",
+    harfbuzz_features = { "zero", "ss09", "ss17", "ss18" },
+    weight = "Medium",
+  },
+  {
+    family = "JetBrainsMono Nerd Font Mono",
+    harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
+  },
+})
+
 -- config.font = wezterm.font({ family = "RecMonoCasual Nerd Font Mono" })
 -- config.line_height = 1.1
 -- config.font = wezterm.font({
@@ -43,7 +52,7 @@ config.font_size = 13
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
 
-config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
+-- config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
 
 -- config.font_rules = {
 --   {
@@ -79,6 +88,8 @@ local function scheme_for_appearance(appearance)
     return {
       foreground = "#c0caf5",
       background = "#1a1b26",
+      ansi = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" },
+      brights = { "#414868", "#ff899d", "#9fe044", "#faba4a", "#8db0ff", "#c7a9ff", "#a4daff", "#c0caf5" },
       cursor_bg = "#c0caf5",
       cursor_border = "#c0caf5",
       cursor_fg = "#1a1b26",
@@ -87,8 +98,6 @@ local function scheme_for_appearance(appearance)
       split = "#7aa2f7",
       compose_cursor = "#ff9e64",
       scrollbar_thumb = "#292e42",
-      ansi = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" },
-      brights = { "#414868", "#ff899d", "#9fe044", "#faba4a", "#8db0ff", "#c7a9ff", "#a4daff", "#c0caf5" },
       tab_bar = {
         inactive_tab_edge = "#16161e",
         background = "#1a1b26",
