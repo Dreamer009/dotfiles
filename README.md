@@ -46,7 +46,7 @@ brew services start atuin
 Nice additions:
 
 ```bash
-brew install ack asdf btop coreutils libpq tldr
+brew install asdf btop coreutils libpq tldr
 ```
 
 Other fonts I sometimes use:
@@ -87,6 +87,15 @@ brew install --cask neovide-app
 
 - `<C-t>` search files by name
 - `<C-r>` search recent commands
+
+### [ripgrep](https://github.com/BurntSushi/ripgrep)
+
+- `rg` search standard files using the .gitignore file to ignore specific files
+- `rg -.` search hidden files
+- `rg -u` search (unrestricted) ignored files
+- `rg -uu` search (unrestricted) ignored and hidden files
+- `rg -t=ruby` search ruby files
+- `rg -t=js` search javascript files
 
 ### [LazyGit](https://github.com/jesseduffield/lazygit)
 
