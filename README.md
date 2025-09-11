@@ -40,6 +40,7 @@ Required packages:
 brew install atuin bat carapace eza fd fz git git-delta neovim nushell ripgrep starship tree yazi zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
 brew install jesseduffield/lazygit/lazygit
+brew install sst/tap/opencode
 brew services start atuin
 ```
 

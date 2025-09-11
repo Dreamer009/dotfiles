@@ -159,6 +159,9 @@ alias lg="lazygit"
 alias v="vi"
 alias vi="nvim"
 
+# ---- OpenCode -----
+alias oc="opencode"
+
 # ---- VS Code -----
 alias code="/usr/local/bin/code"
 
