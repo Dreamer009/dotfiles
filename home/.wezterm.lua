@@ -32,17 +32,17 @@ config.font_size = 13
 --   harfbuzz_features = { "zero", "cv08" },
 -- })
 
-config.font = wezterm.font_with_fallback({
-  {
-    family = "MonoLisa Default",
-    harfbuzz_features = { "zero", "ss09", "ss17", "ss18" },
-    weight = "Medium",
-  },
-  {
-    family = "JetBrainsMono Nerd Font Mono",
-    harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
-  },
-})
+-- config.font = wezterm.font_with_fallback({
+--   {
+--     family = "MonoLisa Default",
+--     harfbuzz_features = { "zero", "ss09", "ss17", "ss18" },
+--     weight = "Medium",
+--   },
+--   {
+--     family = "JetBrainsMono Nerd Font Mono",
+--     harfbuzz_features = { "calt=0", "zero", "cv03", "cv18" },
+--   },
+-- })
 
 -- config.font = wezterm.font({ family = "RecMonoCasual Nerd Font Mono" })
 -- config.line_height = 1.1
@@ -52,7 +52,8 @@ config.font = wezterm.font_with_fallback({
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
 
--- config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
+config.font_size = 15
+config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
 
 -- config.font_rules = {
 --   {
