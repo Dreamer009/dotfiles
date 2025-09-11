@@ -64,6 +64,9 @@ alias lg = lazygit
 alias v = vi
 alias vi = nvim
 
+# ---- OpenCode -----
+alias oc = opencode
+
 # ---- Fzf (fuzzy find) -----
 # NOTE: works with nushell as the default terminal
 # alias fzf = fzf --multi --preview='try {bat --style=numbers --color=always {}} catch {clear; eza --tree --color=always | head -200}'
