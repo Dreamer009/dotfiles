@@ -52,7 +52,6 @@ config.font_size = 13
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
 
-config.font_size = 15
 config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
 
 -- config.font_rules = {
@@ -84,7 +83,7 @@ local function scheme_for_appearance(appearance)
     -- -----------------------------------------------------------------------------
     -- TokyoNight WezTerm Colors
     -- Theme: Tokyo Night Night
-    -- Upstream: https://github.com/folke/tokyonight.nvim/raw/main/extras/alacritty/tokyonight_storm.toml
+    -- Upstream: https://github.com/folke/tokyonight.nvim/blob/main/extras/wezterm/tokyonight_night.toml
     -- -----------------------------------------------------------------------------
     return {
       foreground = "#c0caf5",
