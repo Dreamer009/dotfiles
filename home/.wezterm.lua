@@ -78,26 +78,10 @@ config.window_decorations = "RESIZE"
 -- config.window_background_opacity = 0.8
 -- config.macos_window_background_blur = 10
 
-local function scheme_for_appearance(appearance)
+local function setup_colors(config, appearance)
   if appearance:find("Dark") then
-    -- -----------------------------------------------------------------------------
-    -- TokyoNight WezTerm Colors
-    -- Theme: Tokyo Night Night
-    -- Upstream: https://github.com/folke/tokyonight.nvim/blob/main/extras/wezterm/tokyonight_night.toml
-    -- -----------------------------------------------------------------------------
-    return {
-      foreground = "#c0caf5",
-      background = "#1a1b26",
-      ansi = { "#15161e", "#f7768e", "#9ece6a", "#e0af68", "#7aa2f7", "#bb9af7", "#7dcfff", "#a9b1d6" },
-      brights = { "#414868", "#ff899d", "#9fe044", "#faba4a", "#8db0ff", "#c7a9ff", "#a4daff", "#c0caf5" },
-      cursor_bg = "#c0caf5",
-      cursor_border = "#c0caf5",
-      cursor_fg = "#1a1b26",
-      selection_bg = "#283457",
-      selection_fg = "#c0caf5",
-      split = "#7aa2f7",
-      compose_cursor = "#ff9e64",
-      scrollbar_thumb = "#292e42",
+    config.color_scheme = "tokyonight_night"
+    config.colors = {
       tab_bar = {
         inactive_tab_edge = "#16161e",
         background = "#1a1b26",
@@ -125,25 +109,8 @@ local function scheme_for_appearance(appearance)
       },
     }
   else
-    -- -----------------------------------------------------------------------------
-    -- Catppuccin WezTerm Colors
-    -- Theme: Catppuccin Latte
-    -- Upstream: https://github.com/catppuccin/wezterm/blob/main/dist/catppuccin-latte.toml
-    -- -----------------------------------------------------------------------------
-    return {
-      foreground = "#4c4f69",
-      background = "#eff1f5",
-      ansi = { "#bcc0cc", "#d20f39", "#40a02b", "#df8e1d", "#1e66f5", "#ea76cb", "#179299", "#5c5f77" },
-      brights = { "#acb0be", "#d20f39", "#40a02b", "#df8e1d", "#1e66f5", "#ea76cb", "#179299", "#6c6f85" },
-      compose_cursor = "#dd7878",
-      cursor_bg = "#dc8a78",
-      cursor_border = "#dc8a78",
-      cursor_fg = "#dce0e8",
-      scrollbar_thumb = "#acb0be",
-      selection_bg = "#acb0be",
-      selection_fg = "#4c4f69",
-      split = "#9ca0b0",
-      visual_bell = "#ccd0da",
+    config.color_scheme = "catppuccin-latte"
+    config.colors = {
       tab_bar = {
         background = "#dce0e8",
         inactive_tab_edge = "#ccd0da",
@@ -172,7 +139,7 @@ local function scheme_for_appearance(appearance)
   end
 end
 
-config.colors = scheme_for_appearance(wezterm.gui.get_appearance())
+setup_colors(config, wezterm.gui.get_appearance())
 
 -- and finally, return the configuration to wezterm
 return config
