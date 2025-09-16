@@ -50,6 +50,10 @@ $env.config = {
   ]
 }
 
+# ----- Mac OSX open -----
+alias nuopen = open
+alias open = ^open   # keep original system "open"
+
 # ----- Bat (better cat) -----
 alias cat = bat_with_dynamic_theme
 
