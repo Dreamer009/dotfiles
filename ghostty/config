@@ -41,7 +41,7 @@ font-feature = ss18
 # font-feature = cv01
 
 # Theme
-theme = light:catppuccin-latte,dark:tokyonight_night
+theme = light:Catppuccin Latte,dark:tokyonight_night
 macos-titlebar-style = tabs
 window-theme = ghostty
 
@@ -62,11 +62,11 @@ command = "/opt/homebrew/bin/nu"
 
 # Quick Terminal
 keybind = global:ctrl+,=toggle_quick_terminal
-keybind = super+f=write_screen_file:open
+keybind = super+f=write_screen_file:paste
 
 # Other
 adjust-underline-position = 4
-auto-update-channel = stable
+auto-update-channel = tip
 copy-on-select = clipboard
 mouse-hide-while-typing = true
 resize-overlay = never
