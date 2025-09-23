@@ -91,9 +91,6 @@ alias fzf = fzf --exact --multi --preview='if [ -d {} ]; then
 # ---- VS Code -----
 alias code = /usr/local/bin/code
 
-# ---- Yazi -----
-alias y = yazi
-
 source ./env.nu
 source ~/.config/atuin/init.nu
 source ~/.cache/carapace/init.nu

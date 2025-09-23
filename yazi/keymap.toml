@@ -6,4 +6,7 @@ prepend_keymap = [
 
   # Operation
   { on = "d", run = "remove --permanently", desc = "Permanently delete selected files" },
+  { on = "Q", run = "quit", desc = "Quit without outputting cwd-file" },
+  { on = "q", run = "quit --no-cwd-file", desc = "Quit without outputting cwd-file" },
+  { on = "<Enter>" , run = "plugin smart-enter", desc = "Enter directory and quit, or open file" },
 ]
