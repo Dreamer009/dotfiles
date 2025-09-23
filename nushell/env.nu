@@ -60,6 +60,17 @@ def bat_with_dynamic_theme [
   }
 }
 
+def --env y [...args] {
+  let tmp = (mktemp -t "yazi-cwd.XXXXXX")
+  ^yazi ...$args --cwd-file $tmp
+  let cwd = (cat $tmp | str trim)
+
+  if $cwd != "" and $cwd != $env.PWD {
+    cd $cwd
+  }
+  rm -fp $tmp
+}
+
 # Use nushell functions to define your right and left prompt
 $env.PROMPT_COMMAND = {|| create_left_prompt }
 # FIXME: This default is not implemented in rust code as of 2023-09-08.
