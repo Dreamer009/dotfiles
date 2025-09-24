@@ -72,6 +72,10 @@ config.window_padding = {
   bottom = 0,
 }
 
+-- fullscreen
+config.initial_cols = 999
+config.initial_rows = 999
+
 -- config.enable_tab_bar = false
 config.window_decorations = "RESIZE"
 
