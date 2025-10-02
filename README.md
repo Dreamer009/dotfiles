@@ -47,7 +47,7 @@ brew services start atuin
 Nice additions:
 
 ```bash
-brew install asdf btop coreutils libpq tldr
+brew install asdf btop coreutils libpq tldr db-browser-for-sqlite
 ```
 
 Other fonts I sometimes use:
