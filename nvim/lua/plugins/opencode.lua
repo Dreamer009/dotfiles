@@ -9,19 +9,19 @@ return {
       terminal = {
         auto_close = true,
         win = {
-          position = "float", -- <<── instead of "right"
-          border = "rounded", -- optional: give it a border
-          -- Stay in the editor after opening the terminal
+          --     position = "float", -- <<── instead of "right"
+          --     border = "rounded", -- optional: give it a border
+          --     -- Stay in the editor after opening the terminal
           enter = true,
-          wo = {
-            -- Title is unnecessary - `opencode` TUI has its own footer
-            winbar = "",
-          },
-          bo = {
-            -- Make it easier to target for customization, and prevent possibly unintended `"snacks_terminal"` targeting.
-            -- e.g. the recommended edgy.nvim integration puts all `"snacks_terminal"` windows at the bottom.
-            filetype = "opencode_terminal",
-          },
+          --     wo = {
+          --       -- Title is unnecessary - `opencode` TUI has its own footer
+          --       winbar = "",
+          --     },
+          --     bo = {
+          --       -- Make it easier to target for customization, and prevent possibly unintended `"snacks_terminal"` targeting.
+          --       -- e.g. the recommended edgy.nvim integration puts all `"snacks_terminal"` windows at the bottom.
+          --       filetype = "opencode_terminal",
+          --     },
         },
       },
     }
@@ -42,7 +42,7 @@ return {
     vim.keymap.set("v", "<leader>oa", function()
       require("opencode").ask("@selection: ")
     end, { desc = "Ask opencode about selection" })
-    vim.keymap.set("n", "<leader>on", function()
+    vim.keymap.set("n", "<leader>oc", function()
       require("opencode").command("session_new")
     end, { desc = "New opencode session" })
     vim.keymap.set("n", "<leader>oy", function()
