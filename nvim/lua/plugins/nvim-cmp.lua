@@ -14,7 +14,7 @@ return {
     "onsails/lspkind.nvim", -- vs-code like pictograms
     "rafamadriz/friendly-snippets", -- useful snippets
     "saadparwaiz1/cmp_luasnip", -- for autocompletion
-    "tailwind-tools", -- "luckasRanarison/tailwind-tools.nvim" tailwindcss autocomplete previews colors
+    "roobert/tailwindcss-colorizer-cmp.nvim", -- tailwindcss
   },
   config = function()
     local cmp = require("cmp")
@@ -51,7 +51,7 @@ return {
       -- configure lspkind for vs-code like pictograms in completion menu
       formatting = {
         format = require("lspkind").cmp_format({
-          before = require("tailwind-tools.cmp").lspkind_format,
+          before = require("tailwindcss-colorizer-cmp").formatter,
         }),
       },
     })
