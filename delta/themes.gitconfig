@@ -363,6 +363,44 @@
     merge-conflict-theirs-diff-header-style = bold
     merge-conflict-theirs-diff-header-decoration-style = box
 
+[delta "chameleon_lazygit"]
+    #author: https://github.com/AirOnSkin
+    dark = true
+    line-numbers = false
+    side-by-side = true
+    keep-plus-minus-markers = false
+    file-style = bold
+    file-decoration-style = ul
+    file-added-label = [+]
+    file-copied-label = [==]
+    file-modified-label = [*]
+    file-removed-label = [-]
+    file-renamed-label = [->]
+    hunk-header-style = omit
+    line-numbers-left-format = " {nm:>3} │"
+    line-numbers-left-style = red
+    line-numbers-right-format = " {np:>3} │"
+    line-numbers-right-style = green
+    line-numbers-minus-style = red italic
+    line-numbers-plus-style = green italic
+    line-numbers-zero-style = italic
+    minus-style = bold red
+    minus-emph-style = bold "#202020" "#FF5555"
+    minus-non-emph-style = bold red
+    plus-style = bold green
+    plus-emph-style = bold "#202020" "#50FA7B"
+    plus-non-emph-style = bold green
+    zero-style = dim white
+    blame-code-style = syntax
+    blame-format = "{author:<18} ({commit:>9}) {timestamp:^16}"
+    # blame-palette = "#2E3440" "#3B4252" "#434C5E" "#4C566A"
+    # merge-conflict-begin-symbol = ~
+    # merge-conflict-end-symbol = ~
+    merge-conflict-ours-diff-header-style = bold
+    merge-conflict-ours-diff-header-decoration-style = box
+    merge-conflict-theirs-diff-header-style = bold
+    merge-conflict-theirs-diff-header-decoration-style = box
+
 [delta "gruvmax-fang"]
     # author: https://github.com/maxfangx
     # General appearance

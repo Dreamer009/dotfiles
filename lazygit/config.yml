@@ -11,6 +11,10 @@ update:
   days: 1
 git:
   autoForwardBranches: none
+  paging:
+    colorArg: always
+    pager: delta --paging=never --features=chameleon_lazygit
+
 # tokyonight night / catppuccin-latte hybrid
 gui:
   nerdFontsVersion: "3"
