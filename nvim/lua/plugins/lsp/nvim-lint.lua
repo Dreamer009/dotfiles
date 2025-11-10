@@ -13,6 +13,7 @@ return {
       svelte = { "eslint_d" },
       typescript = { "eslint_d" },
       typescriptreact = { "eslint_d" },
+      vue = { "eslint_d" },
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
@@ -38,6 +39,22 @@ return {
         vim.fn.system({ "erb-formatter", "--write", file })
 
         -- Force reload the file
+        vim.cmd("edit!")
+      end,
+    })
+
+    -- Run ESLint autocorrect on save for JS/TS/Vue files
+    vim.api.nvim_create_autocmd("BufWritePost", {
+      group = lint_augroup,
+      pattern = { "*.js", "*.jsx", "*.ts", "*.tsx", "*.vue" },
+      callback = function()
+        local file = vim.fn.expand("%:p") -- Get the full file path
+        local cwd = vim.fn.getcwd()
+
+        -- Run ESLint fix using yarn (since you're in a yarn project)
+        vim.fn.system({ "yarn", "eslint", "--fix", file }, cwd)
+
+        -- Force reload the file to show changes
         vim.cmd("edit!")
       end,
     })

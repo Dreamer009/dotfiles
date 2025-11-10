@@ -8,6 +8,7 @@ return {
         "dockerls",
         "elixirls",
         "emmet_ls",
+        "eslint",
         "html",
         "lua_ls",
         "pylsp",
