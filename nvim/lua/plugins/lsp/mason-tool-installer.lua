@@ -9,7 +9,6 @@ return {
         "erb-formatter", -- erb formatter
         "eslint_d", -- js linter
         "isort", -- python formatter
-        "prettier", -- prettier formatter
         "pylint", -- python linter
         "rubocop", -- ruby linter and formatter
         "stylua", -- lua formatter
