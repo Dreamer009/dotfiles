@@ -6,22 +6,9 @@ return {
 
     conform.setup({
       formatters_by_ft = {
-        css = { "prettier" },
         erb = { "rubocop" },
-        graphql = { "prettier" },
-        html = { "prettier" },
-        javascript = { "prettier" },
-        javascriptreact = { "prettier" },
-        json = { "prettier" },
-        liquid = { "prettier" },
         lua = { "stylua" },
-        markdown = { "prettier" },
         ruby = { "rubocop" },
-        svelte = { "prettier" },
-        typescript = { "prettier" },
-        typescriptreact = { "prettier" },
-        vue = { "prettier" },
-        yaml = { "prettier" },
       },
       format_on_save = {
         lsp_fallback = true,
