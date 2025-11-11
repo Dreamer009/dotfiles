@@ -51,8 +51,8 @@ return {
         local file = vim.fn.expand("%:p") -- Get the full file path
         local cwd = vim.fn.getcwd()
 
-        -- Run ESLint fix using yarn (since you're in a yarn project)
-        vim.fn.system({ "yarn", "eslint", "--fix", file }, cwd)
+        -- Run ESLint fix using pnpm (since you're in a pnpm project)
+        vim.fn.system({ "pnpm", "eslint", "--fix", file }, cwd)
 
         -- Force reload the file to show changes
         vim.cmd("edit!")
