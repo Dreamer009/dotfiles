@@ -122,6 +122,7 @@ return {
         "scss",
         "svelte",
         "typescriptreact",
+        "vue",
       },
     })
 
@@ -140,6 +141,16 @@ return {
 
     vim.lsp.config("ts_ls", {
       capabilities = capabilities,
+    })
+
+    vim.lsp.config("volar", {
+      capabilities = capabilities,
+      filetypes = { "vue" },
+      init_options = {
+        vue = {
+          hybridMode = false,
+        },
+      },
     })
   end,
 }
