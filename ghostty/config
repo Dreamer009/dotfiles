@@ -68,6 +68,7 @@ keybind = super+f=write_screen_file:paste
 adjust-underline-position = 4
 auto-update-channel = tip
 copy-on-select = clipboard
+maximize = true
 mouse-hide-while-typing = true
 resize-overlay = never
 shell-integration-features = cursor,sudo,no-title
