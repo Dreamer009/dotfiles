@@ -143,14 +143,8 @@ return {
       capabilities = capabilities,
     })
 
-    vim.lsp.config("volar", {
-      capabilities = capabilities,
-      filetypes = { "vue" },
-      init_options = {
-        vue = {
-          hybridMode = false,
-        },
-      },
-    })
+    -- Note: Vue language server (Volar) needs to be installed manually
+    -- Run: npm install -g @vue/language-server
+    -- Then restart Neovim for Vue language support
   end,
 }

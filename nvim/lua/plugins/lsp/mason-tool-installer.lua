@@ -12,7 +12,6 @@ return {
         "pylint", -- python linter
         "rubocop", -- ruby linter and formatter
         "stylua", -- lua formatter
-        "vue-language-server", -- Vue language server
       },
       auto_update = true, -- Automatically update tools
       run_on_start = true, -- Install missing tools when starting Neovim
