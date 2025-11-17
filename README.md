@@ -47,7 +47,7 @@ brew services start atuin
 Nice additions:
 
 ```bash
-brew install asdf btop coreutils libpq tldr db-browser-for-sqlite
+brew install asdf btop coreutils db-browser-for-sqlite libpq tldr
 ```
 
 Other fonts I sometimes use:
@@ -286,6 +286,7 @@ Install language plugins
 asdf plugin add elixir
 asdf plugin add nodejs
 asdf plugin add ruby
+asdf plugin add pnpm
 ```
 
 Install the latest versions
@@ -294,6 +295,13 @@ Install the latest versions
 asdf install elixir latest
 asdf install nodejs latest
 asdf install ruby latest
+asdf install pnpm latest
+```
+
+npm global config
+
+```bash
+npm install --global corepack@latest
 ```
 
 Check for new plugin versions
