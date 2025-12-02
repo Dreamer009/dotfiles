@@ -9,7 +9,7 @@ return {
       javascript = { "eslint_d" },
       javascriptreact = { "eslint_d" },
       python = { "pylint" },
-      ruby = { "rubocop" },
+      -- ruby = { "rubocop" }, -- Disabled: ruby-lsp provides RuboCop diagnostics via addon
       svelte = { "eslint_d" },
       typescript = { "eslint_d" },
       typescriptreact = { "eslint_d" },
@@ -17,17 +17,6 @@ return {
     }
 
     local lint_augroup = vim.api.nvim_create_augroup("lint", { clear = true })
-
-    -- Run RuboCop autocorrect on save for Ruby files
-    vim.api.nvim_create_autocmd("BufWritePost", {
-      group = lint_augroup,
-      pattern = "*.rb",
-      callback = function()
-        local file = vim.fn.expand("%:p") -- Get the full file path
-        -- Run RuboCop autocorrect
-        vim.fn.system({ "rubocop", "--autocorrect", file })
-      end,
-    })
 
     -- Run erb_lint autocorrect on save for Ruby files
     vim.api.nvim_create_autocmd("BufWritePost", {
