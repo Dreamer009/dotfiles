@@ -52,7 +52,10 @@ config.font_size = 13
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
 
-config.font = wezterm.font({ family = "Maple Mono NF", harfbuzz_features = { "cv01", "cv05", "cv38" } })
+config.font = wezterm.font({
+  family = "Maple Mono NF",
+  harfbuzz_features = { "cv01", "cv02", "cv03", "cv05", "cv38" },
+})
 
 -- config.font_rules = {
 --   {
