@@ -61,6 +61,9 @@ alias cat = bat_with_dynamic_theme
 alias nuls = ls
 alias ls = eza -a --color=always --git --icons=always --ignore-glob=".DS_Store"
 
+# ---- LazyDocker -----
+alias ld = lazydocker
+
 # ---- LazyGit -----
 alias lg = lazygit
 

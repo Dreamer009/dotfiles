@@ -152,6 +152,9 @@ alias cat="bat_with_dynamic_theme"
 # ---- Eza (better ls) -----
 alias ls="eza --color=always --git --no-filesize --icons=always --no-time --no-user --no-permissions"
 
+# ---- LazyDocker -----
+alias ld = lazydocker
+
 # ---- LazyGit -----
 alias lg="lazygit"
 
