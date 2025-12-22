@@ -51,6 +51,12 @@ config.font_size = 13
 --   harfbuzz_features = { "ss01", "ss02", "ss03", "ss04", "ss05" },
 -- })
 -- config.font = wezterm.font({ family = "RobotoMono Nerd Font Mono", })
+-- config.font_size = 14
+-- config.font = wezterm.font({
+--   -- family = "CaskaydiaCove Nerd Font Mono",
+--   family = "Cascadia Code NF",
+--   harfbuzz_features = { "ss02", "ss19", "ss20" },
+-- })
 
 config.font = wezterm.font({
   family = "Maple Mono NF",
@@ -62,7 +68,7 @@ config.font = wezterm.font({
 --     italic = true,
 --     font = wezterm.font({
 --       family = "Maple Mono NF",
---       harfbuzz_features = { "cv01" },
+--       harfbuzz_features = { "cv01", "cv02", "cv03", "cv05", "cv38" },
 --       italic = true,
 --     }),
 --   },

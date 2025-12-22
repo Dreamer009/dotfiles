@@ -54,7 +54,7 @@ brew install asdf btop coreutils db-browser-for-sqlite libpq tldr
 Other fonts I sometimes use:
 
 ```bash
-brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font
+brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font font-cascadia-code-nf
 ```
 
 Optional supported Terminals / GUIs:
