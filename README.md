@@ -14,6 +14,13 @@ Finder application set column view to default
 defaults write com.apple.finder FXPreferredViewStyle -string "Nlsv"
 ```
 
+Desktop doesn't display files
+
+```
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+```
+
 ### Mac Dev Applications
 
 1. [Postgresql App](https://postgresapp.com/downloads.html) (needed to enable `psql` from the cmdline)
@@ -39,6 +46,7 @@ Required packages:
 ```bash
 brew install atuin bat carapace eza fd fz git git-delta neovim nushell ripgrep starship tree yazi zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
+brew install --cask nikitabobko/tap/aerospace
 brew install jesseduffield/lazygit/lazygit
 brew install jesseduffield/lazydocker/lazydocker
 brew install sst/tap/opencode
