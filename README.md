@@ -44,7 +44,7 @@ I have started using a payed font: [MonoLisa](https://www.monolisa.dev/playgroun
 Required packages:
 
 ```bash
-brew install atuin bat carapace eza fd fz git git-delta neovim nushell ripgrep starship tree yazi zoxide
+brew install atuin bat carapace eza fd fz git git-delta mole neovim nushell ripgrep starship tree yazi zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
 brew install --cask nikitabobko/tap/aerospace
 brew install jesseduffield/lazygit/lazygit
