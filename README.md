@@ -47,6 +47,7 @@ Required packages:
 brew install atuin bat carapace eza fd fz git git-delta mole neovim nushell ripgrep starship tree yazi zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
 brew install --cask nikitabobko/tap/aerospace
+brew install --cask raycast
 brew install jesseduffield/lazygit/lazygit
 brew install jesseduffield/lazydocker/lazydocker
 brew install sst/tap/opencode
