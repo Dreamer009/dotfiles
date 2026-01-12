@@ -41,10 +41,10 @@ make
 
 I have started using a payed font: [MonoLisa](https://www.monolisa.dev/playground). You can either download a free trial or update the font references to your preferred font.
 
-Required packages:
+Core configuration:
 
 ```bash
-brew install atuin bat carapace eza fd fz git git-delta mole neovim nushell ripgrep starship tree yazi zoxide
+brew install asdf atuin bat btop carapace coreutils db-browser-for-sqlite eza fd fz git git-delta libpq mole neovim nushell ripgrep starship tldr tree yazi zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask raycast
@@ -54,24 +54,32 @@ brew install sst/tap/opencode
 brew services start atuin
 ```
 
-Nice additions:
+Supported Terminals / GUIs:
 
 ```bash
-brew install asdf btop coreutils db-browser-for-sqlite libpq tldr
+brew install --cask ghostty
+brew install --cask wezterm
+brew install --cask neovide-app
+```
+
+Apps I use:
+
+```bash
+brew install --cask brave-browser
+brew install --cask chatgpt
+brew install --cask claude
+brew install --cask discord
+brew install --cask firefox@developer-edition
+brew install --cask obsidian
+brew install --cask superlist
+brew install --cask visual-studio-code
+brew install --cask zed
 ```
 
 Other fonts I sometimes use:
 
 ```bash
 brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font font-cascadia-code-nf
-```
-
-Optional supported Terminals / GUIs:
-
-```bash
-brew install --cask ghostty
-brew install --cask wezterm
-brew install --cask neovide-app
 ```
 
 ## Command Line Notes
