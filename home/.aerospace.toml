@@ -229,6 +229,10 @@ on-mode-changed = []
     alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Brave Browser'
+run = 'move-node-to-workspace 2'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'Claude'
 run = 'move-node-to-workspace A'
 
