@@ -241,6 +241,14 @@ if.app-name-regex-substring = 'ChatGPT'
 run = 'move-node-to-workspace A'
 
 [[on-window-detected]]
+if.app-name-regex-substring = 'Discord'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
+if.app-name-regex-substring = 'Messages'
+run = 'move-node-to-workspace C'
+
+[[on-window-detected]]
 if.app-name-regex-substring = 'Mail'
 run = 'move-node-to-workspace N'
 
@@ -274,10 +282,6 @@ run = 'layout floating'
 
 [[on-window-detected]]
 if.app-name-regex-substring = 'Mail'
-run = 'layout floating'
-
-[[on-window-detected]]
-if.app-name-regex-substring = 'Messages'
 run = 'layout floating'
 
 [[on-window-detected]]
