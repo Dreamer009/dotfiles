@@ -57,11 +57,11 @@ window-theme = ghostty
 # custom-shader-animation = always
 
 # Custom icon
-macos-icon = custom-style
-macos-icon-frame = aluminum
-macos-icon-ghost-color = white
+# macos-icon = custom-style
+# macos-icon-frame = plastic
+# macos-icon-ghost-color = white
 # Baltimore Ravens purple
-macos-icon-screen-color = 241773
+# macos-icon-screen-color = 241773
 
 # Nushell
 command = "/opt/homebrew/bin/nu"
@@ -71,7 +71,7 @@ keybind = global:ctrl+,=toggle_quick_terminal
 
 # Other
 adjust-underline-position = 4
-auto-update-channel = tip
+# auto-update-channel = tip
 copy-on-select = clipboard
 maximize = true
 mouse-hide-while-typing = true
