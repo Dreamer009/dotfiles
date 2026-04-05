@@ -3,8 +3,9 @@ vim.pack.add({ "https://github.com/mfussenegger/nvim-lint" })
 local lint = require("lint")
 
 lint.linters_by_ft = {
-  erb = { "erb-lint" },
-  javascript = { "eslint_d" },
+  erb          = { "erb-lint" },
+  javascript   = { "eslint_d" },
+  ruby         = { "rubocop" },
   javascriptreact = { "eslint_d" },
   python = { "pylint" },
   svelte = { "eslint_d" },
