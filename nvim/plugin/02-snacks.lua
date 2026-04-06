@@ -51,7 +51,6 @@ snacks.setup({
   win = {
     keys = {
       q = "close",
-      ["<Esc>"] = "close",
     },
   },
 })
