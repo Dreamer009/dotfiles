@@ -19,28 +19,53 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local opts = { buffer = ev.buf, silent = true }
 
     opts.desc = "Show LSP references"
-    keymap.set("n", "gr", function() Snacks.picker.lsp_references(opts) end, opts)
+    keymap.set("n", "gr", function()
+      Snacks.picker.lsp_references(opts)
+    end, opts)
 
     opts.desc = "Go to declaration"
-    keymap.set("n", "gD", function() Snacks.picker.lsp_declarations(opts) end, opts)
+    keymap.set("n", "gD", function()
+      Snacks.picker.lsp_declarations(opts)
+    end, opts)
 
     opts.desc = "Show LSP definitions"
-    keymap.set("n", "gd", function() Snacks.picker.lsp_definitions(opts) end, opts)
+    keymap.set("n", "gd", function()
+      Snacks.picker.lsp_definitions(opts)
+    end, opts)
 
     opts.desc = "Show LSP implementations"
-    keymap.set("n", "gi", function() Snacks.picker.lsp_implementations(opts) end, opts)
+    keymap.set("n", "gi", function()
+      Snacks.picker.lsp_implementations(opts)
+    end, opts)
 
     opts.desc = "Show LSP type definitions"
-    keymap.set("n", "gt", function() Snacks.picker.lsp_type_definitions(opts) end, opts)
+    keymap.set("n", "gt", function()
+      Snacks.picker.lsp_type_definitions(opts)
+    end, opts)
 
     opts.desc = "See available code actions"
     keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
     opts.desc = "Smart rename"
-    keymap.set("n", "<leader>rn", vim.lsp.buf.rename, opts)
+    keymap.set("n", "<leader>rn", function()
+      vim.ui.input({ prompt = "New name: " }, function(input)
+        if input then
+          vim.lsp.buf.rename(input)
+        end
+      end)
+    end, opts)
+    keymap.set("n", "grn", function()
+      vim.ui.input({ prompt = "New name: " }, function(input)
+        if input then
+          vim.lsp.buf.rename(input)
+        end
+      end)
+    end, opts)
 
     opts.desc = "Show buffer diagnostics"
-    keymap.set("n", "<leader>D", function() Snacks.picker.lsp_definitions(opts) end, opts)
+    keymap.set("n", "<leader>D", function()
+      Snacks.picker.lsp_definitions(opts)
+    end, opts)
 
     opts.desc = "Show line diagnostics"
     keymap.set("n", "<leader>d", vim.diagnostic.open_float, opts)
