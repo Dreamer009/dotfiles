@@ -1,8 +1,2 @@
 frame = "none"
 tabs = false
-
-[font]
-size = 13
-
-[[font.normal]]
-family = "MonoLisa Custom"

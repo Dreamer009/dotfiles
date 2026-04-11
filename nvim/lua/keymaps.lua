@@ -82,6 +82,6 @@ end, { silent = true })
 
 -- Neovide
 if vim.g.neovide then
-  vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
+  vim.opt.guifont = { "MonoLisa Custom:h13" }
   vim.cmd([[autocmd VimEnter * silent! AutoSession restore]])
 end
