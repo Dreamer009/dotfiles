@@ -196,6 +196,7 @@ _fzf_comprun() {
   esac
 }
 
+export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"
 export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/curl/include"

@@ -144,6 +144,9 @@ let shims_dir = (
 )
 path add $shims_dir
 
+# ripgrep
+$env.RIPGREP_CONFIG_PATH = ($env.HOME | path join '.ripgreprc')
+
 # NeoVim
 $env.EDITOR = "nvim"
 
