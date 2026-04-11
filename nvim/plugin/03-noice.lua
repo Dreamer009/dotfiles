@@ -5,6 +5,15 @@ vim.pack.add({
 })
 
 require("noice").setup({
+  routes = {
+    {
+      filter = {
+        event = "msg_show",
+        find = "Font can't be updated to",
+      },
+      opts = { skip = true },
+    },
+  },
   views = {
     mini = {
       align = "message-left",
