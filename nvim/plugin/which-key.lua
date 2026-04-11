@@ -1,5 +1,5 @@
-vim.o.timeout = true
-vim.o.timeoutlen = 500
+vim.opt.timeout = true
+vim.opt.timeoutlen = 500
 
 vim.pack.add({ "https://github.com/folke/which-key.nvim" })
 
