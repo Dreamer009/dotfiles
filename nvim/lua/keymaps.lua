@@ -83,5 +83,5 @@ end, { silent = true })
 -- Neovide
 if vim.g.neovide then
   vim.cmd([[autocmd VimEnter * silent! lcd ~/Documents/dev/aiom]])
-  vim.cmd([[autocmd VimEnter * silent! SessionRestore<CR>]])
+  vim.cmd([[autocmd VimEnter * silent! AutoSession restore]])
 end
