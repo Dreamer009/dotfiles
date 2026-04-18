@@ -46,14 +46,6 @@ vim.api.nvim_create_autocmd("LspAttach", {
     opts.desc = "See available code actions"
     keymap.set({ "n", "v" }, "<leader>ca", vim.lsp.buf.code_action, opts)
 
-    opts.desc = "Smart rename"
-    keymap.set("n", "<leader>rn", function()
-      vim.ui.input({ prompt = "New name: " }, function(input)
-        if input then
-          vim.lsp.buf.rename(input)
-        end
-      end)
-    end, opts)
     keymap.set("n", "grn", function()
       vim.ui.input({ prompt = "New name: " }, function(input)
         if input then

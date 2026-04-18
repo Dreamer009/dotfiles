@@ -40,6 +40,9 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
+-- Rename word under cursor in current buffer only
+keymap.set("n", "<leader>rn", [[:%s/\<<C-r><C-w>\>//gI<Left><Left><Left>]], { desc = "Rename word in buffer" })
+
 -- Keep window centered when going up/down
 keymap.set("n", "J", "mzJ`z")
 keymap.set("n", "G", "Gzz")
