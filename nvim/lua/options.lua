@@ -45,6 +45,39 @@ opt.splitbelow = true -- split horizontal window to the bottom
 -- turn off swapfile
 opt.swapfile = false
 
+-- don't persist fold state across sessions
+opt.viewoptions:remove("folds")
+opt.sessionoptions:remove("folds")
+
+-- folding
+opt.foldlevelstart = 99 -- open all folds when opening a file
+opt.foldtext = "" -- show first line of fold as-is, no summary text
+opt.foldcolumn = "1"
+opt.fillchars = {
+  eob = " ",
+  fold = " ",
+  foldclose = "󰁕",
+  foldopen = " ",
+  foldsep = " ",
+  foldinner = " ",
+  msgsep = "─",
+}
+
+vim.api.nvim_create_autocmd("FileType", {
+  callback = function(ev)
+    vim.schedule(function()
+      local ok = pcall(vim.treesitter.get_parser, ev.buf)
+      if ok then
+        vim.wo.foldmethod = "expr"
+        vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+      else
+        vim.wo.foldmethod = "indent"
+      end
+    end)
+  end,
+  desc = "Set treesitter folds per buffer",
+})
+
 -- nushell
 opt.shell = "/opt/homebrew/bin/nu"
 
