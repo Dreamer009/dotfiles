@@ -182,14 +182,6 @@ brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font font-casc
 
 ## [NeoVim](https://neovim.io)
 
-### [copilot](https://github.com/github/copilot.vim)
-
-To initialize and authenticate copilot:
-
-```bash
-:Copilot setup
-```
-
 ### [Snacks.picker](https://github.com/folke/snacks.nvim/blob/main/docs/picker.md)
 
 - `J` scrolls the preview text down
