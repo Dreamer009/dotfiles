@@ -1,14 +1,6 @@
 stow:
-	cd home
-	stow .
-	cd ..
-	cd lazygit
-	stow .
-	cd ..
-	cd nushell
-	stow .
-	cd ..
-	cd vscode
-	stow .
-	cd ..
+	cd home && stow .
+	cd lazygit && stow .
+	cd nushell && stow .
+	cd vscode && stow .
 	stow .

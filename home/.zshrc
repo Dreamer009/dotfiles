@@ -132,7 +132,7 @@ _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
 
-source ~/fzf-git.sh/fzf-git.sh
+source <(fzf --zsh)
 
 bat_with_dynamic_theme() {
   # Determine the bat theme based on the interface style
@@ -195,6 +195,8 @@ _fzf_comprun() {
     *)            fzf --preview "$show_file_or_dir_preview" "$@" ;;
   esac
 }
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 export RIPGREP_CONFIG_PATH="$HOME/.ripgreprc"
 export PATH="/opt/homebrew/opt/curl/bin:$PATH"

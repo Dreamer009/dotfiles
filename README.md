@@ -24,7 +24,8 @@ killall Finder
 ### Mac Dev Applications
 
 1. [Postgresql App](https://postgresapp.com/downloads.html) (needed to enable `psql` from the cmdline)
-2. [Postman](https://www.postman.com/downloads/)
+2. [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh) `git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions`
+3. [Postman](https://www.postman.com/downloads/)
 
 ## Setup
 
@@ -34,6 +35,8 @@ killall Finder
 
 ```bash
 brew install stow
+brew install nushell
+starship init nu
 make
 ```
 
@@ -44,7 +47,30 @@ I have started using a payed font: [MonoLisa](https://www.monolisa.dev/playgroun
 Core configuration:
 
 ```bash
-brew install asdf atuin bat btop carapace coreutils db-browser-for-sqlite eza fd fz git git-delta libpq mole neovim nushell ripgrep starship tldr tree tree-sitter yazi zoxide
+brew install asdf
+brew install atuin
+brew install bat
+brew install btop
+brew install carapace
+brew install coreutils
+brew install db-browser-for-sqlite
+brew install eza
+brew install fd
+brew install fz
+brew install fzf
+brew install git
+brew install git-delta
+brew install libpq
+brew install libyaml
+brew install mole
+brew install neovim
+brew install ripgrep
+brew install starship
+brew install tldr
+brew install tree
+brew install tree-sitter
+brew install yazi
+brew install zoxide
 brew install --cask font-jetbrains-mono-nerd-font font-maple-mono-nf
 brew install --cask nikitabobko/tap/aerospace
 brew install --cask raycast
@@ -80,6 +106,13 @@ Other fonts I sometimes use:
 
 ```bash
 brew install --cask font-lilex-nerd-font font-recursive-mono-nerd-font font-cascadia-code-nf
+```
+
+Atuin
+
+```
+atuin login -u <username>
+atuin sync
 ```
 
 ## Command Line Notes

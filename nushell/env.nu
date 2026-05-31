@@ -134,6 +134,7 @@ use std "path add"
 # path add ($env.HOME | path join ".local" "bin")
 # $env.PATH = ($env.PATH | uniq)
 path add /opt/homebrew/bin
+path add /opt/homebrew/sbin
 path add /Applications/Postgres.app/Contents/Versions/latest/bin
 let shims_dir = (
   if ( $env | get --optional ASDF_DATA_DIR | is-empty ) {
