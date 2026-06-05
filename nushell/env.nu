@@ -185,3 +185,13 @@ $env.STARSHIP_CONFIG = '/Users/benjaminsullivan/.config/starship.toml'
 
 mkdir ~/.cache/carapace
 carapace _carapace nushell | save --force ~/.cache/carapace/init.nu
+
+# ---- Solargraph (Neovim LSP): keep `yardoc` on PATH ----
+# Mason only links `solargraph` into its bin, not `yardoc`, which Solargraph
+# shells out to when caching gem docs. Without it the gem cache rebuilds on
+# every Neovim launch. Re-link if missing (e.g. after a Mason reinstall).
+let mason_yardoc = ($env.HOME | path join '.local' 'share' 'nvim' 'mason' 'packages' 'solargraph' 'bin' 'yardoc')
+let mason_yardoc_link = ($env.HOME | path join '.local' 'share' 'nvim' 'mason' 'bin' 'yardoc')
+if ($mason_yardoc | path exists) and (not ($mason_yardoc_link | path exists)) {
+  ln -sf $mason_yardoc $mason_yardoc_link
+}

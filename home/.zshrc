@@ -204,3 +204,13 @@ export LDFLAGS="-L/opt/homebrew/opt/curl/lib"
 export CPPFLAGS="-I/opt/homebrew/opt/curl/include"
 export PATH="/opt/homebrew/opt/libpq/bin:$PATH"
 export PATH="${ASDF_DATA_DIR:-$HOME/.asdf}/shims:$PATH"
+
+# ---- Solargraph (Neovim LSP): keep `yardoc` on PATH ----
+# Mason only links `solargraph` into its bin, not `yardoc`, which Solargraph
+# shells out to when caching gem docs. Without it the gem cache rebuilds on
+# every Neovim launch. Re-link if missing (e.g. after a Mason reinstall).
+_mason_solargraph_bin="$HOME/.local/share/nvim/mason/packages/solargraph/bin"
+if [[ -x "$_mason_solargraph_bin/yardoc" && ! -e "$HOME/.local/share/nvim/mason/bin/yardoc" ]]; then
+  ln -sf "$_mason_solargraph_bin/yardoc" "$HOME/.local/share/nvim/mason/bin/yardoc"
+fi
+unset _mason_solargraph_bin
