@@ -43,7 +43,7 @@ def nufzf [] {
 }
 
 def apple_theme [] {
-  if (defaults read -g AppleInterfaceStyle err> /dev/null | str downcase) == "dark" {
+  if (defaults read -g AppleInterfaceStyle err> /dev/null | str lowercase) == "dark" {
     "dark"
   } else {
     "light"
