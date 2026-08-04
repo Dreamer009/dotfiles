@@ -11,8 +11,8 @@ update:
   days: 1
 git:
   autoForwardBranches: none
-  pagers:
-    - pager: delta --paging=never --features=chameleon_lazygit
+  diffRenderers:
+    - command: delta --paging=never --features=chameleon_lazygit
       colorArg: always
 # tokyonight night / catppuccin-latte hybrid
 gui:
